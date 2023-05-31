@@ -3028,17 +3028,35 @@
                         "\"main_credit\"",
                         ""
                       ]
-                    },
+                    }
+                  ],
+                  "events": [
                     {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "assets\\assets_teste\\sounds\\caju_coin_efx.wav",
-                        "",
-                        "10",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MouseButtonPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "Left"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\assets_teste\\sounds\\caju_coin_efx.wav",
+                            "",
+                            "10",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -3137,17 +3155,35 @@
                         "\"main_control\"",
                         ""
                       ]
-                    },
+                    }
+                  ],
+                  "events": [
                     {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "assets\\assets_teste\\sounds\\caju_coin_efx.wav",
-                        "",
-                        "10",
-                        ""
+                      "type": "BuiltinCommonInstructions::Standard",
+                      "conditions": [
+                        {
+                          "type": {
+                            "value": "MouseButtonPressed"
+                          },
+                          "parameters": [
+                            "",
+                            "Left"
+                          ]
+                        }
+                      ],
+                      "actions": [
+                        {
+                          "type": {
+                            "value": "PlaySound"
+                          },
+                          "parameters": [
+                            "",
+                            "assets\\assets_teste\\sounds\\caju_coin_efx.wav",
+                            "",
+                            "10",
+                            ""
+                          ]
+                        }
                       ]
                     }
                   ]
@@ -3856,14 +3892,14 @@
         },
         {
           "angle": 0,
-          "customSize": false,
-          "height": 0,
+          "customSize": true,
+          "height": 64,
           "layer": "",
           "name": "voltar",
           "persistentUuid": "c9a20a35-12c5-4089-bcc0-e81f72076067",
-          "width": 0,
-          "x": 388,
-          "y": 581,
+          "width": 283,
+          "x": 30,
+          "y": 609,
           "zOrder": 4,
           "numberProperties": [],
           "stringProperties": [],
@@ -4084,18 +4120,6 @@
                         "\"main_menu\"",
                         ""
                       ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "assets\\assets_teste\\sounds\\caju_coin_efx.wav",
-                        "",
-                        "10",
-                        ""
-                      ]
                     }
                   ]
                 }
@@ -4115,6 +4139,12 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
                 }
               ],
               "actions": [
@@ -4457,6 +4487,16 @@
                     "",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "TimeScale"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "2"
+                  ]
                 }
               ],
               "actions": [
@@ -4734,7 +4774,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": true,
-        "zoomFactor": 0.11490420710820709,
+        "zoomFactor": 0.1953371520839519,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -7247,7 +7287,7 @@
         "gridColor": 10401023,
         "gridAlpha": 1,
         "snap": false,
-        "zoomFactor": 0.7077142870146859,
+        "zoomFactor": 0.5995738389111256,
         "windowMask": false
       },
       "objectsGroups": [
