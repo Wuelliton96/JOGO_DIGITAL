@@ -2591,6 +2591,15 @@
         "name": "jump8",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/New image3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "New image3",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -2840,9 +2849,14 @@
           "ambientLightColorB": 9083544,
           "ambientLightColorG": 150995054,
           "ambientLightColorR": 1869182049,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -3850,9 +3864,14 @@
           "ambientLightColorB": 891136,
           "ambientLightColorG": 150995054,
           "ambientLightColorR": 1869182049,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -4420,9 +4439,14 @@
           "ambientLightColorB": 6519472,
           "ambientLightColorG": 150995054,
           "ambientLightColorR": 1869182049,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -4791,9 +4815,14 @@
           "ambientLightColorB": 6869840,
           "ambientLightColorG": 150995054,
           "ambientLightColorR": 1869182049,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -5143,9 +5172,14 @@
           "ambientLightColorB": 2,
           "ambientLightColorG": 134217728,
           "ambientLightColorR": 1597132097,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -5373,9 +5407,14 @@
           "ambientLightColorB": 709608,
           "ambientLightColorG": 150995054,
           "ambientLightColorR": 1869182049,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -7877,9 +7916,14 @@
           "ambientLightColorB": 6675512,
           "ambientLightColorG": 150995054,
           "ambientLightColorR": 1869182049,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -7927,7 +7971,7 @@
         "gridColor": 10401023,
         "gridAlpha": 1,
         "snap": false,
-        "zoomFactor": 0.402722583332608,
+        "zoomFactor": 0.8081094648116163,
         "windowMask": false
       },
       "objectsGroups": [
@@ -9991,8 +10035,8 @@
           "name": "mar",
           "persistentUuid": "959e3719-2e40-4714-ac63-9eb49474f8a7",
           "width": 81,
-          "x": 4841,
-          "y": 759,
+          "x": 4842,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10011,8 +10055,8 @@
           "name": "mar",
           "persistentUuid": "7f9175d4-9724-4319-a720-94f2ff98b6c0",
           "width": 81,
-          "x": 2985,
-          "y": 759,
+          "x": 2986,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10031,8 +10075,8 @@
           "name": "mar",
           "persistentUuid": "3ca54d50-7ef8-49f2-b07b-677f5c289ed5",
           "width": 81,
-          "x": 3066,
-          "y": 759,
+          "x": 3067,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10051,8 +10095,8 @@
           "name": "mar",
           "persistentUuid": "431ba8b4-f70c-489e-b081-bfcb670c235a",
           "width": 81,
-          "x": 3147,
-          "y": 759,
+          "x": 3148,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10071,8 +10115,8 @@
           "name": "mar",
           "persistentUuid": "fc57731a-70ef-42fa-9c71-0dd2e1e0278b",
           "width": 81,
-          "x": 3226,
-          "y": 759,
+          "x": 3227,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10091,8 +10135,8 @@
           "name": "mar",
           "persistentUuid": "8a3ebfbb-bb1f-42ab-a9c2-a067a0c5c599",
           "width": 81,
-          "x": 3631,
-          "y": 759,
+          "x": 3632,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10111,8 +10155,8 @@
           "name": "mar",
           "persistentUuid": "2ce27328-9845-4858-9233-6be1b1b8ff90",
           "width": 81,
-          "x": 3712,
-          "y": 759,
+          "x": 3713,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10131,8 +10175,8 @@
           "name": "mar",
           "persistentUuid": "dae318c5-b2d8-44b4-ad3a-d611ef2903f7",
           "width": 81,
-          "x": 5003,
-          "y": 759,
+          "x": 5004,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10151,8 +10195,8 @@
           "name": "mar",
           "persistentUuid": "2a31fcfd-0c24-47b7-8a2b-32c164bbbd65",
           "width": 81,
-          "x": 4841,
-          "y": 605,
+          "x": 4842,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10166,8 +10210,8 @@
           "name": "mar",
           "persistentUuid": "b18ea303-8be5-4e13-b6f3-39bf2df2ea9a",
           "width": 81,
-          "x": 2985,
-          "y": 605,
+          "x": 2986,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10181,8 +10225,8 @@
           "name": "mar",
           "persistentUuid": "e458fb91-3027-4563-a8ec-cd73c89605f9",
           "width": 81,
-          "x": 3066,
-          "y": 605,
+          "x": 3067,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10196,8 +10240,8 @@
           "name": "mar",
           "persistentUuid": "c86b29cf-7a66-4097-bd85-e9379159b3b4",
           "width": 81,
-          "x": 3147,
-          "y": 605,
+          "x": 3148,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10211,8 +10255,8 @@
           "name": "mar",
           "persistentUuid": "bd10387c-f23a-4260-bc4c-d84acb31acbf",
           "width": 81,
-          "x": 3226,
-          "y": 605,
+          "x": 3227,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10226,8 +10270,8 @@
           "name": "mar",
           "persistentUuid": "d26ca519-d941-493a-b139-d337e77741c5",
           "width": 81,
-          "x": 3631,
-          "y": 605,
+          "x": 3632,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10241,8 +10285,8 @@
           "name": "mar",
           "persistentUuid": "262016d8-1d4c-4f96-9618-0d1ec26a3bb9",
           "width": 81,
-          "x": 3712,
-          "y": 605,
+          "x": 3713,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10256,8 +10300,8 @@
           "name": "mar",
           "persistentUuid": "773dc491-c350-4f54-955a-b8856d315c4c",
           "width": 81,
-          "x": 5003,
-          "y": 605,
+          "x": 5004,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10271,8 +10315,8 @@
           "name": "mar",
           "persistentUuid": "d2fbb69a-af97-443d-bb2e-52d6dc014cc6",
           "width": 81,
-          "x": 4841,
-          "y": 682,
+          "x": 4842,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10291,8 +10335,8 @@
           "name": "mar",
           "persistentUuid": "3da8dd5a-8e2e-468b-ae8c-7471d4bfd337",
           "width": 81,
-          "x": 2985,
-          "y": 682,
+          "x": 2986,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10311,8 +10355,8 @@
           "name": "mar",
           "persistentUuid": "59bbb788-4ff1-454d-b12b-d802f4a314f9",
           "width": 81,
-          "x": 3066,
-          "y": 682,
+          "x": 3067,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10331,8 +10375,8 @@
           "name": "mar",
           "persistentUuid": "b165f048-308c-44c3-b66d-6ed7c52d13a6",
           "width": 81,
-          "x": 3147,
-          "y": 682,
+          "x": 3148,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10351,8 +10395,8 @@
           "name": "mar",
           "persistentUuid": "df808601-b5f7-4cad-ae15-cceb36bc46b3",
           "width": 81,
-          "x": 3226,
-          "y": 682,
+          "x": 3227,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10371,8 +10415,8 @@
           "name": "mar",
           "persistentUuid": "6762e5c8-09f5-49ac-8662-950fbb7451db",
           "width": 81,
-          "x": 3631,
-          "y": 682,
+          "x": 3632,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10391,8 +10435,8 @@
           "name": "mar",
           "persistentUuid": "98746195-0d34-435b-8f9f-96f9385bc488",
           "width": 81,
-          "x": 3712,
-          "y": 682,
+          "x": 3713,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10411,8 +10455,8 @@
           "name": "mar",
           "persistentUuid": "906d2969-5cb9-4fc3-974a-5859fbcd48bd",
           "width": 81,
-          "x": 5003,
-          "y": 682,
+          "x": 5004,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10611,8 +10655,8 @@
           "name": "mar",
           "persistentUuid": "b5ec6be3-95f2-4f31-b0ad-2c3008fdb4c6",
           "width": 81,
-          "x": 3550,
-          "y": 759,
+          "x": 3551,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10631,8 +10675,8 @@
           "name": "mar",
           "persistentUuid": "0546f90e-f1fe-4563-916d-16fd22b51cc2",
           "width": 81,
-          "x": 3469,
-          "y": 759,
+          "x": 3470,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10651,8 +10695,8 @@
           "name": "mar",
           "persistentUuid": "94de8c2a-166e-4077-b10d-dc86bdd30892",
           "width": 81,
-          "x": 3550,
-          "y": 605,
+          "x": 3551,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10666,8 +10710,8 @@
           "name": "mar",
           "persistentUuid": "1a034669-24d8-40cc-ad7e-e6559b3ae67b",
           "width": 81,
-          "x": 3469,
-          "y": 605,
+          "x": 3470,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10681,8 +10725,8 @@
           "name": "mar",
           "persistentUuid": "1a69b287-7a78-45df-8489-bd5ac9da2407",
           "width": 81,
-          "x": 3550,
-          "y": 682,
+          "x": 3551,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10701,8 +10745,8 @@
           "name": "mar",
           "persistentUuid": "a9bc8ca3-3871-48aa-8b53-2ee7e9ad8e27",
           "width": 81,
-          "x": 3469,
-          "y": 682,
+          "x": 3470,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10721,8 +10765,8 @@
           "name": "mar",
           "persistentUuid": "ed20c6dc-356e-4250-b977-53d0c2e4287b",
           "width": 81,
-          "x": 4922,
-          "y": 759,
+          "x": 4923,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10741,8 +10785,8 @@
           "name": "mar",
           "persistentUuid": "f312bef5-42ad-4b61-b735-7ee73a594d3a",
           "width": 81,
-          "x": 4598,
-          "y": 759,
+          "x": 4599,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10761,8 +10805,8 @@
           "name": "mar",
           "persistentUuid": "f164c064-f051-437d-9526-54d4469fdc9a",
           "width": 81,
-          "x": 4922,
-          "y": 605,
+          "x": 4923,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10776,8 +10820,8 @@
           "name": "mar",
           "persistentUuid": "71c98fee-6952-449d-855c-384adce0035c",
           "width": 81,
-          "x": 4598,
-          "y": 605,
+          "x": 4599,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10791,8 +10835,8 @@
           "name": "mar",
           "persistentUuid": "c8394910-5e20-4b2e-a81a-3cbeab52d518",
           "width": 81,
-          "x": 4922,
-          "y": 682,
+          "x": 4923,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10811,8 +10855,8 @@
           "name": "mar",
           "persistentUuid": "ed80342e-14e0-4aa9-8a3d-5b70a2d200cc",
           "width": 81,
-          "x": 4598,
-          "y": 682,
+          "x": 4599,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10871,8 +10915,8 @@
           "name": "mar",
           "persistentUuid": "35a22795-72a5-4542-a424-3a3f2a0c3e94",
           "width": 81,
-          "x": 4359,
-          "y": 759,
+          "x": 4360,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10891,8 +10935,8 @@
           "name": "mar",
           "persistentUuid": "79671300-07fb-4ba0-bd52-3cf7d8aa5610",
           "width": 81,
-          "x": 4278,
-          "y": 759,
+          "x": 4279,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10911,8 +10955,8 @@
           "name": "mar",
           "persistentUuid": "0ac9c20c-477c-4088-8b48-1904be0fee97",
           "width": 81,
-          "x": 4359,
-          "y": 605,
+          "x": 4360,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10926,8 +10970,8 @@
           "name": "mar",
           "persistentUuid": "f7eaffdf-80cc-4cd1-bf84-34b381bf6ad3",
           "width": 81,
-          "x": 4278,
-          "y": 605,
+          "x": 4279,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -10941,8 +10985,8 @@
           "name": "mar",
           "persistentUuid": "2b58bc6c-a82b-48c3-9dfc-b44b8b36e7bc",
           "width": 81,
-          "x": 4359,
-          "y": 682,
+          "x": 4360,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10961,8 +11005,8 @@
           "name": "mar",
           "persistentUuid": "2c872b91-7256-4767-b902-4b553d638c89",
           "width": 81,
-          "x": 4278,
-          "y": 682,
+          "x": 4279,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -10981,8 +11025,8 @@
           "name": "mar",
           "persistentUuid": "ab2dd957-6b00-4bad-8045-9ce89090fa1b",
           "width": 81,
-          "x": 4197,
-          "y": 759,
+          "x": 4198,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -11001,8 +11045,8 @@
           "name": "mar",
           "persistentUuid": "7724f4fc-36e8-4459-ac26-7c97a818ed7d",
           "width": 81,
-          "x": 4517,
-          "y": 759,
+          "x": 4518,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -11021,8 +11065,8 @@
           "name": "mar",
           "persistentUuid": "83f11f9c-08f8-4802-9bd1-044742648668",
           "width": 81,
-          "x": 4197,
-          "y": 605,
+          "x": 4198,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -11036,8 +11080,8 @@
           "name": "mar",
           "persistentUuid": "c590312c-7ffe-4fbf-afd4-38e29b1637bd",
           "width": 81,
-          "x": 4517,
-          "y": 605,
+          "x": 4518,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -11051,8 +11095,8 @@
           "name": "mar",
           "persistentUuid": "68c6b5fc-e828-4ece-a324-3edb00439f49",
           "width": 81,
-          "x": 4197,
-          "y": 682,
+          "x": 4198,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -11071,8 +11115,8 @@
           "name": "mar",
           "persistentUuid": "ecc1a154-730a-4d7b-867c-47e14b9ae1d8",
           "width": 81,
-          "x": 4517,
-          "y": 682,
+          "x": 4518,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -11091,8 +11135,8 @@
           "name": "mar",
           "persistentUuid": "70834f14-fc45-44fb-bb9e-e1bd3d098a30",
           "width": 81,
-          "x": 4760,
-          "y": 759,
+          "x": 4761,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -11111,8 +11155,8 @@
           "name": "mar",
           "persistentUuid": "f529f72c-a2b3-4a9c-9dfd-6c702d5faab3",
           "width": 81,
-          "x": 4760,
-          "y": 605,
+          "x": 4761,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -11126,8 +11170,8 @@
           "name": "mar",
           "persistentUuid": "a3d63735-da0e-43f7-811c-fec79c64c88e",
           "width": 81,
-          "x": 4760,
-          "y": 682,
+          "x": 4761,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -11146,8 +11190,8 @@
           "name": "mar",
           "persistentUuid": "a62e44ab-5517-47ba-81ee-01999d5a8590",
           "width": 81,
-          "x": 4679,
-          "y": 759,
+          "x": 4680,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -11166,8 +11210,8 @@
           "name": "mar",
           "persistentUuid": "bc8c0c39-9188-4b54-9611-d9496a83dba0",
           "width": 81,
-          "x": 4679,
-          "y": 605,
+          "x": 4680,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -11181,8 +11225,8 @@
           "name": "mar",
           "persistentUuid": "2aabeff2-96c8-4eef-94fd-877599bc425f",
           "width": 81,
-          "x": 4679,
-          "y": 682,
+          "x": 4680,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -11202,7 +11246,7 @@
           "persistentUuid": "cbae4b2d-d07f-4f02-b5fb-9d2cc80e4d8c",
           "width": 14616,
           "x": -415,
-          "y": 157,
+          "y": 173,
           "zOrder": -11,
           "numberProperties": [],
           "stringProperties": [],
@@ -13830,8 +13874,8 @@
           "name": "mar",
           "persistentUuid": "61533a7f-5244-42ce-acb1-b1c645039c79",
           "width": 81,
-          "x": 3307,
-          "y": 759,
+          "x": 3308,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -13850,8 +13894,8 @@
           "name": "mar",
           "persistentUuid": "f142b07b-9139-408a-a7c2-5a74160828f2",
           "width": 81,
-          "x": 3388,
-          "y": 759,
+          "x": 3389,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -13870,8 +13914,8 @@
           "name": "mar",
           "persistentUuid": "36d4ec10-ea61-4cf2-9812-6ccf793baaf3",
           "width": 81,
-          "x": 3307,
-          "y": 605,
+          "x": 3308,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -13885,8 +13929,8 @@
           "name": "mar",
           "persistentUuid": "466497d8-3b38-40dc-89eb-bd957fcc39bc",
           "width": 81,
-          "x": 3388,
-          "y": 605,
+          "x": 3389,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -13900,8 +13944,8 @@
           "name": "mar",
           "persistentUuid": "fea27da7-d4a6-420e-927d-41cebd7c6276",
           "width": 81,
-          "x": 3307,
-          "y": 682,
+          "x": 3308,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -13920,8 +13964,8 @@
           "name": "mar",
           "persistentUuid": "6c7cbab0-7fb9-4ce8-b057-ee6cd11ee0c1",
           "width": 81,
-          "x": 3388,
-          "y": 682,
+          "x": 3389,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -14195,8 +14239,8 @@
           "name": "mar",
           "persistentUuid": "55c70c36-7ef9-4863-853b-b454ebcaebc1",
           "width": 81,
-          "x": 4036,
-          "y": 759,
+          "x": 4037,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -14215,8 +14259,8 @@
           "name": "mar",
           "persistentUuid": "ad8df65f-2234-4c6a-b779-d4d9dfbd1910",
           "width": 81,
-          "x": 3955,
-          "y": 759,
+          "x": 3956,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -14235,8 +14279,8 @@
           "name": "mar",
           "persistentUuid": "a9ad06ea-e3f9-4632-8969-d32eef747261",
           "width": 81,
-          "x": 4036,
-          "y": 605,
+          "x": 4037,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -14250,8 +14294,8 @@
           "name": "mar",
           "persistentUuid": "2c3e7540-e552-4540-850b-411d2ca9a00a",
           "width": 81,
-          "x": 3955,
-          "y": 605,
+          "x": 3956,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -14265,8 +14309,8 @@
           "name": "mar",
           "persistentUuid": "e88b7c2f-3e3c-4abb-816d-110c884dfe96",
           "width": 81,
-          "x": 4036,
-          "y": 682,
+          "x": 4037,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -14285,8 +14329,8 @@
           "name": "mar",
           "persistentUuid": "cf887723-83fe-4967-94ef-67c58e8530e7",
           "width": 81,
-          "x": 3955,
-          "y": 682,
+          "x": 3956,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -14305,8 +14349,8 @@
           "name": "mar",
           "persistentUuid": "5a156c83-d55d-4fab-8fa7-a3369a01f12c",
           "width": 81,
-          "x": 3874,
-          "y": 759,
+          "x": 3875,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -14325,8 +14369,8 @@
           "name": "mar",
           "persistentUuid": "94c43b4e-0606-431f-88dd-b3cb758baaf2",
           "width": 81,
-          "x": 3793,
-          "y": 759,
+          "x": 3794,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -14345,8 +14389,8 @@
           "name": "mar",
           "persistentUuid": "cf45a91e-42e7-4aaa-a44e-adb35804cb5d",
           "width": 81,
-          "x": 3874,
-          "y": 605,
+          "x": 3875,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -14360,8 +14404,8 @@
           "name": "mar",
           "persistentUuid": "b3856c33-12c9-4adf-b6c2-80d03a02fc7e",
           "width": 81,
-          "x": 3793,
-          "y": 605,
+          "x": 3794,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -14375,8 +14419,8 @@
           "name": "mar",
           "persistentUuid": "1efa45b9-f53a-4cef-a50a-275e48716a0a",
           "width": 81,
-          "x": 3874,
-          "y": 682,
+          "x": 3875,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -14395,8 +14439,8 @@
           "name": "mar",
           "persistentUuid": "bcbf955c-b95d-498c-a65b-df05d0a0c827",
           "width": 81,
-          "x": 3793,
-          "y": 682,
+          "x": 3794,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -14415,8 +14459,8 @@
           "name": "mar",
           "persistentUuid": "8122c230-9d78-41cb-a60d-e077fd6c904f",
           "width": 81,
-          "x": 4116,
-          "y": 759,
+          "x": 4117,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -14435,8 +14479,8 @@
           "name": "mar",
           "persistentUuid": "ea548160-cd24-4f81-88e7-bc3cc04efd6e",
           "width": 81,
-          "x": 4116,
-          "y": 605,
+          "x": 4117,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -14450,8 +14494,8 @@
           "name": "mar",
           "persistentUuid": "57da1421-5107-4a5d-96c1-72854baacf1f",
           "width": 81,
-          "x": 4116,
-          "y": 682,
+          "x": 4117,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -14470,8 +14514,8 @@
           "name": "mar",
           "persistentUuid": "82e40b98-b366-4aba-9dc6-09db770e413c",
           "width": 81,
-          "x": 4440,
-          "y": 759,
+          "x": 4441,
+          "y": 773,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -14490,8 +14534,8 @@
           "name": "mar",
           "persistentUuid": "abdb3947-6af9-42f3-bb31-166898476a95",
           "width": 81,
-          "x": 4440,
-          "y": 605,
+          "x": 4441,
+          "y": 619,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -14505,8 +14549,8 @@
           "name": "mar",
           "persistentUuid": "5b3df4c4-0d30-46d2-84f2-895a5f6381e7",
           "width": 81,
-          "x": 4440,
-          "y": 682,
+          "x": 4441,
+          "y": 696,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -21073,7 +21117,7 @@
           "persistentUuid": "801754df-99ea-4abb-8d3b-ccdadeccf215",
           "width": 81,
           "x": 10374,
-          "y": 740,
+          "y": 750,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -21093,7 +21137,7 @@
           "persistentUuid": "73992a2f-540a-409d-95fe-9c8ca15843e7",
           "width": 81,
           "x": 10213,
-          "y": 740,
+          "y": 750,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -21113,7 +21157,7 @@
           "persistentUuid": "9b3a3fc7-6755-41cc-8858-41dc8d05dd25",
           "width": 81,
           "x": 10374,
-          "y": 586,
+          "y": 596,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -21128,7 +21172,7 @@
           "persistentUuid": "e7734e21-448a-4667-b2ff-2e1e04bf2da7",
           "width": 81,
           "x": 10213,
-          "y": 586,
+          "y": 596,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -21143,7 +21187,7 @@
           "persistentUuid": "3d5ebbd4-fcca-4334-a802-b6c7eef2933e",
           "width": 81,
           "x": 10374,
-          "y": 663,
+          "y": 673,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -21163,7 +21207,7 @@
           "persistentUuid": "28622b0e-ea0d-4dae-ad0f-09566b5d98f3",
           "width": 81,
           "x": 10213,
-          "y": 663,
+          "y": 673,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -21183,7 +21227,7 @@
           "persistentUuid": "18c37b15-7ab5-4404-b9f0-d092a8035d58",
           "width": 81,
           "x": 10294,
-          "y": 740,
+          "y": 750,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -21203,7 +21247,7 @@
           "persistentUuid": "571962b2-601b-4cf9-8cb6-ca2755a17c45",
           "width": 81,
           "x": 10294,
-          "y": 586,
+          "y": 596,
           "zOrder": 5,
           "numberProperties": [],
           "stringProperties": [],
@@ -21218,7 +21262,7 @@
           "persistentUuid": "f155dec0-1c4f-44e6-953b-571be83c9a88",
           "width": 81,
           "x": 10294,
-          "y": 663,
+          "y": 673,
           "zOrder": 5,
           "numberProperties": [
             {
@@ -21238,7 +21282,7 @@
           "persistentUuid": "805b30d8-d1f7-41e2-b15a-1a6adb715a64",
           "width": 81,
           "x": 10693,
-          "y": 740,
+          "y": 748,
           "zOrder": 0,
           "numberProperties": [
             {
@@ -21258,7 +21302,7 @@
           "persistentUuid": "b012a937-4e86-4411-b5c0-01d210ef86c6",
           "width": 81,
           "x": 10612,
-          "y": 740,
+          "y": 748,
           "zOrder": 0,
           "numberProperties": [
             {
@@ -21278,7 +21322,7 @@
           "persistentUuid": "a53ccd93-2863-4629-980f-8cf802c0d10d",
           "width": 81,
           "x": 10693,
-          "y": 586,
+          "y": 594,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -21293,7 +21337,7 @@
           "persistentUuid": "a65a03d7-5895-419d-84f5-a5c3c8df76d3",
           "width": 81,
           "x": 10612,
-          "y": 586,
+          "y": 594,
           "zOrder": 0,
           "numberProperties": [],
           "stringProperties": [],
@@ -21308,7 +21352,7 @@
           "persistentUuid": "42e6a8ad-4a23-4c8e-ab0a-ba0ea41eb7bc",
           "width": 81,
           "x": 10693,
-          "y": 663,
+          "y": 671,
           "zOrder": 0,
           "numberProperties": [
             {
@@ -21328,7 +21372,7 @@
           "persistentUuid": "0d62337b-e725-4d91-80cf-3194159177a0",
           "width": 81,
           "x": 10612,
-          "y": 663,
+          "y": 671,
           "zOrder": 0,
           "numberProperties": [
             {
@@ -21368,7 +21412,7 @@
           "persistentUuid": "3b9c95e1-aeb2-4918-8c6c-0e5311c6212f",
           "width": 81,
           "x": 10932,
-          "y": 740,
+          "y": 746,
           "zOrder": -1,
           "numberProperties": [
             {
@@ -21403,7 +21447,7 @@
           "persistentUuid": "a0f390b6-1e5b-4afe-8ce2-e78d1b9b7cbb",
           "width": 81,
           "x": 10932,
-          "y": 586,
+          "y": 592,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -21438,7 +21482,7 @@
           "persistentUuid": "9a5cd3fb-8937-4d00-8d62-68aa96121a08",
           "width": 81,
           "x": 10932,
-          "y": 663,
+          "y": 669,
           "zOrder": -1,
           "numberProperties": [
             {
@@ -21458,7 +21502,7 @@
           "persistentUuid": "a7a22587-7b11-4cc8-8e1e-654c9cac143f",
           "width": 81,
           "x": 11013,
-          "y": 740,
+          "y": 746,
           "zOrder": -1,
           "numberProperties": [
             {
@@ -21478,7 +21522,7 @@
           "persistentUuid": "017bc3cf-4096-4510-b4a0-520d3ae781e1",
           "width": 81,
           "x": 11013,
-          "y": 586,
+          "y": 592,
           "zOrder": -1,
           "numberProperties": [],
           "stringProperties": [],
@@ -21493,7 +21537,7 @@
           "persistentUuid": "3dd7a3a9-d916-42da-a76b-85aeeb012539",
           "width": 81,
           "x": 11013,
-          "y": 663,
+          "y": 669,
           "zOrder": -1,
           "numberProperties": [
             {
@@ -27157,6 +27201,51 @@
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 633,
+          "layer": "",
+          "name": "teste1",
+          "persistentUuid": "273e655c-7830-4c4b-bcb2-910bb39f8996",
+          "width": 27,
+          "x": -439,
+          "y": 154,
+          "zOrder": -9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 608,
+          "layer": "",
+          "name": "teste",
+          "persistentUuid": "249cdd90-b516-40f6-af31-f71d554d1860",
+          "width": 32,
+          "x": 14076,
+          "y": 242,
+          "zOrder": 20,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 32,
+          "layer": "",
+          "name": "teste2",
+          "persistentUuid": "02924c51-394d-4ae9-b391-1b6ceba64824",
+          "width": 14701,
+          "x": -430,
+          "y": 643,
+          "zOrder": -10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
         }
       ],
       "objects": [
@@ -30436,6 +30525,42 @@
             "g": 255,
             "r": 255
           }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "teste1",
+          "tags": "",
+          "texture": "New image3",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "teste",
+          "tags": "",
+          "texture": "New image3",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "teste2",
+          "tags": "",
+          "texture": "New image3",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -30463,8 +30588,7 @@
             "textG": 0,
             "textR": 0
           },
-          "comment": "CAMERA",
-          "comment2": ""
+          "comment": "CAMERA"
         },
         {
           "disabled": true,
@@ -30591,6 +30715,26 @@
             }
           ],
           "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ClampCamera"
+              },
+              "parameters": [
+                "",
+                "teste1.BoundingBoxLeft()",
+                "0",
+                "teste.BoundingBoxRight()",
+                "teste2.BoundingBoxBottom()",
+                "",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "layers": [
@@ -30598,9 +30742,14 @@
           "ambientLightColorB": 8903632,
           "ambientLightColorG": 6069792,
           "ambientLightColorR": 10681920,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "background",
+          "renderingType": "",
           "visibility": true,
           "cameras": [],
           "effects": []
@@ -30609,9 +30758,14 @@
           "ambientLightColorB": 0,
           "ambientLightColorG": 10366320,
           "ambientLightColorR": 1,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -30631,9 +30785,14 @@
           "ambientLightColorB": 8903632,
           "ambientLightColorG": 6069792,
           "ambientLightColorR": 10681920,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "foreground",
+          "renderingType": "",
           "visibility": true,
           "cameras": [],
           "effects": []
@@ -30642,9 +30801,14 @@
           "ambientLightColorB": 8903632,
           "ambientLightColorG": 6069792,
           "ambientLightColorR": 10681920,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "HUD",
+          "renderingType": "",
           "visibility": true,
           "cameras": [],
           "effects": []
@@ -30866,9 +31030,14 @@
           "ambientLightColorB": 8408584,
           "ambientLightColorG": 150995054,
           "ambientLightColorR": 1869182049,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 0.1,
           "followBaseLayerCamera": false,
           "isLightingLayer": false,
+          "isLocked": false,
           "name": "",
+          "renderingType": "",
           "visibility": true,
           "cameras": [
             {
@@ -31178,7 +31347,7 @@
                   "parameters": [
                     "background",
                     "+",
-                    "2.2"
+                    "1.8"
                   ]
                 },
                 {
@@ -31233,7 +31402,7 @@
                   "parameters": [
                     "background",
                     "-",
-                    "2.2"
+                    "1.8"
                   ]
                 },
                 {
@@ -33062,8 +33231,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Make sure the joystick has moved from center",
-              "comment2": ""
+              "comment": "Make sure the joystick has moved from center"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -33143,8 +33311,7 @@
                 "textG": 0,
                 "textR": 0
               },
-              "comment": "Make sure the joystick has moved from center",
-              "comment2": ""
+              "comment": "Make sure the joystick has moved from center"
             },
             {
               "type": "BuiltinCommonInstructions::Standard",
@@ -33624,8 +33791,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Move thumb back to center when not being pressed (acts like a spring on a real controller)",
-                      "comment2": ""
+                      "comment": "Move thumb back to center when not being pressed (acts like a spring on a real controller)"
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -36636,8 +36802,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Update private properties through setters to check their values and initialize state.",
-                  "comment2": ""
+                  "comment": "Update private properties through setters to check their values and initialize state."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -36870,8 +37035,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "The camera following is called with an action, the call from doStepPreEvents must be disabled to avoid to do it twice.",
-                  "comment2": ""
+                  "comment": "The camera following is called with an action, the call from doStepPreEvents must be disabled to avoid to do it twice."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -36933,8 +37097,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Delaying and forecasting can be used at the same time.\nForecasting only use the positions that are older than the one used for delaying.\nThe behavior uses a position history that is split in 2 arrays:\n- one for delaying the position (from TimeFromStart to TimeFromStart - CamearDelay)\n- one for forecasting the position (from TimeFromStart - CamearDelay to TimeFromStart - CamearDelay - ForecastHistoryDuration",
-                  "comment2": ""
+                  "comment": "Delaying and forecasting can be used at the same time.\nForecasting only use the positions that are older than the one used for delaying.\nThe behavior uses a position history that is split in 2 arrays:\n- one for delaying the position (from TimeFromStart to TimeFromStart - CamearDelay)\n- one for forecasting the position (from TimeFromStart - CamearDelay to TimeFromStart - CamearDelay - ForecastHistoryDuration"
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -36972,8 +37135,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "At each frame, the camera must catchup the target by a given ratio (speed)\ncameraX(t) - targetX = (cameraX(t - 1) - targetX) * speed\n\nThe frame rate must not impact on the catch-up speed, we don't want a speed in ratio per frame but a speed ratio per second, like this:\ncameraX(t) - targetX = (cameraX(t - 1s) - targetX) * speed\n\nOk, but we still need to process each frame, we can use a exponent for this:\ncameraX(t) - targetX = (cameraX(t - timeDelta) - targetX) * speed^timeDelta\ncameraX(t) = targetX + (cameraX(t - timeDelta) - targetX) * exp(timeDelta * ln(speed))\n\npow is probably more efficient than precalculated log if the speed is changed continuously but this might be rare enough.",
-                  "comment2": ""
+                  "comment": "At each frame, the camera must catchup the target by a given ratio (speed)\ncameraX(t) - targetX = (cameraX(t - 1) - targetX) * speed\n\nThe frame rate must not impact on the catch-up speed, we don't want a speed in ratio per frame but a speed ratio per second, like this:\ncameraX(t) - targetX = (cameraX(t - 1s) - targetX) * speed\n\nOk, but we still need to process each frame, we can use a exponent for this:\ncameraX(t) - targetX = (cameraX(t - timeDelta) - targetX) * speed^timeDelta\ncameraX(t) = targetX + (cameraX(t - timeDelta) - targetX) * exp(timeDelta * ln(speed))\n\npow is probably more efficient than precalculated log if the speed is changed continuously but this might be rare enough."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -37322,8 +37484,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Maybe the catch-up show be done in constant pixel speed instead of constant time speed.",
-                  "comment2": ""
+                  "comment": "Maybe the catch-up show be done in constant pixel speed instead of constant time speed."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -38599,8 +38760,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Deprecated use SetOffsetXOp instead.",
-                  "comment2": ""
+                  "comment": "Deprecated use SetOffsetXOp instead."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -38699,8 +38859,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Deprecated use SetOffsetYOp instead.",
-                  "comment2": ""
+                  "comment": "Deprecated use SetOffsetYOp instead."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -39062,8 +39221,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Add the previous position to have enough (2) positions to evaluate the extra delay for waiting mode.",
-                  "comment2": ""
+                  "comment": "Add the previous position to have enough (2) positions to evaluate the extra delay for waiting mode."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -39132,8 +39290,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Use the object center when no delay is asked.",
-                  "comment2": ""
+                  "comment": "Use the object center when no delay is asked."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -39269,8 +39426,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Remove history entries that are too old to be useful for delaying and pass it to the history for forecasting.",
-                      "comment2": ""
+                      "comment": "Remove history entries that are too old to be useful for delaying and pass it to the history for forecasting."
                     },
                     {
                       "infiniteLoopWarning": true,
@@ -39355,8 +39511,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Don't move the camera if there is not enough history.",
-                      "comment2": ""
+                      "comment": "Don't move the camera if there is not enough history."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -39423,8 +39578,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "Add the extra delay that could be needed to respect the speed limit in waiting mode.\n\nspeedRatio = min(speedMaxX / historySpeedX, speedMaxY / historySpeedY)\ndelay += min(0, timeDelta * (1 - speedRatio))",
-                          "comment2": ""
+                          "comment": "Add the extra delay that could be needed to respect the speed limit in waiting mode.\n\nspeedRatio = min(speedMaxX / historySpeedX, speedMaxY / historySpeedY)\ndelay += min(0, timeDelta * (1 - speedRatio))"
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -39483,8 +39637,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "The time with delay is now between the first 2 indexes",
-                          "comment2": ""
+                          "comment": "The time with delay is now between the first 2 indexes"
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -39929,8 +40082,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Remove history entries that are too old to be useful.\nKeep at least 2 positions because no forecast can be done with less positions.",
-                      "comment2": ""
+                      "comment": "Remove history entries that are too old to be useful.\nKeep at least 2 positions because no forecast can be done with less positions."
                     },
                     {
                       "infiniteLoopWarning": true,
@@ -40072,8 +40224,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Simple linear regression\ny = A * x + B\n\nA = Covariance / VarianceX\nB = MeanY - A * MeanX\n\nNote than we could use only one position every N positions to reduce the process time,\nbut if we really need efficient process JavaScript and circular queues are a must.",
-                  "comment2": ""
+                  "comment": "Simple linear regression\ny = A * x + B\n\nA = Covariance / VarianceX\nB = MeanY - A * MeanX\n\nNote than we could use only one position every N positions to reduce the process time,\nbut if we really need efficient process JavaScript and circular queues are a must."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -40329,8 +40480,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "VarianceX = sum((X[i] - MeanX)²)\nVarianceY = sum((Y[i] - MeanY)²)\nCovariance = sum((X[i] - MeanX) * (Y[i] - MeanY))",
-                          "comment2": ""
+                          "comment": "VarianceX = sum((X[i] - MeanX)²)\nVarianceY = sum((Y[i] - MeanY)²)\nCovariance = sum((X[i] - MeanX) * (Y[i] - MeanY))"
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -40552,8 +40702,7 @@
                                     "textG": 0,
                                     "textR": 0
                                   },
-                                  "comment": "y = A * x + B\n\nA = Covariance / VarianceX\nB = MeanY - A * MeanX",
-                                  "comment2": ""
+                                  "comment": "y = A * x + B\n\nA = Covariance / VarianceX\nB = MeanY - A * MeanX"
                                 },
                                 {
                                   "type": "BuiltinCommonInstructions::Standard",
@@ -40655,8 +40804,7 @@
                                     "textG": 0,
                                     "textR": 0
                                   },
-                                  "comment": "Axis permutation to avoid a ratio between 2 numbers near 0.",
-                                  "comment2": ""
+                                  "comment": "Axis permutation to avoid a ratio between 2 numbers near 0."
                                 },
                                 {
                                   "type": "BuiltinCommonInstructions::Standard",
@@ -40753,8 +40901,7 @@
                                             "textG": 0,
                                             "textR": 0
                                           },
-                                          "comment": "Permute back axis",
-                                          "comment2": ""
+                                          "comment": "Permute back axis"
                                         },
                                         {
                                           "type": "BuiltinCommonInstructions::Standard",
@@ -40975,8 +41122,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Perpendicular line:\npA = -1/a; \npB = -pA * x + y\n\nIntersection:\n/ ProjectedY = a * ProjectedX + b\n\\ ProjectedY = pA * ProjectedX + b\n\nSolution that is cleaned out from indeterminism (like 0 / 0 or infinity / infinity):\nProjectedX= (x + (y - b) * a) / (a² + 1)\nProjectedY = y + (x * a - y + b) / (a² + 1)",
-                  "comment2": ""
+                  "comment": "Perpendicular line:\npA = -1/a; \npB = -pA * x + y\n\nIntersection:\n/ ProjectedY = a * ProjectedX + b\n\\ ProjectedY = pA * ProjectedX + b\n\nSolution that is cleaned out from indeterminism (like 0 / 0 or infinity / infinity):\nProjectedX= (x + (y - b) * a) / (a² + 1)\nProjectedY = y + (x * a - y + b) / (a² + 1)"
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -42161,8 +42307,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "Health",
-                          "comment2": ""
+                          "comment": "Health"
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -42225,8 +42370,7 @@
                                 "textG": 0,
                                 "textR": 0
                               },
-                              "comment": "Correct any values above maximum limits",
-                              "comment2": ""
+                              "comment": "Correct any values above maximum limits"
                             },
                             {
                               "type": "BuiltinCommonInstructions::Standard",
@@ -42341,8 +42485,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "Shield",
-                          "comment2": ""
+                          "comment": "Shield"
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -42438,8 +42581,7 @@
                                 "textG": 0,
                                 "textR": 0
                               },
-                              "comment": "Correct any values above maximum limits",
-                              "comment2": ""
+                              "comment": "Correct any values above maximum limits"
                             },
                             {
                               "type": "BuiltinCommonInstructions::Standard",
@@ -42596,8 +42738,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Only consider incoming damage when damage cooldown is not active",
-                      "comment2": ""
+                      "comment": "Only consider incoming damage when damage cooldown is not active"
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -42647,8 +42788,7 @@
                                 "textG": 0,
                                 "textR": 0
                               },
-                              "comment": "No damage will be applied when dodged",
-                              "comment2": ""
+                              "comment": "No damage will be applied when dodged"
                             },
                             {
                               "type": "BuiltinCommonInstructions::Standard",
@@ -42830,8 +42970,7 @@
                                 "textG": 0,
                                 "textR": 0
                               },
-                              "comment": "If shield is active, damage the shield first",
-                              "comment2": ""
+                              "comment": "If shield is active, damage the shield first"
                             },
                             {
                               "type": "BuiltinCommonInstructions::Standard",
@@ -42899,8 +43038,7 @@
                                     "textG": 0,
                                     "textR": 0
                                   },
-                                  "comment": "If damage is less than shield, subtract damage from shield.",
-                                  "comment2": ""
+                                  "comment": "If damage is less than shield, subtract damage from shield."
                                 },
                                 {
                                   "type": "BuiltinCommonInstructions::Standard",
@@ -42963,8 +43101,7 @@
                                     "textG": 0,
                                     "textR": 0
                                   },
-                                  "comment": "If damage is greater than shield, conditionally apply excess damage based on property",
-                                  "comment2": ""
+                                  "comment": "If damage is greater than shield, conditionally apply excess damage based on property"
                                 },
                                 {
                                   "type": "BuiltinCommonInstructions::Standard",
@@ -43043,8 +43180,7 @@
                                         "textG": 0,
                                         "textR": 0
                                       },
-                                      "comment": "Apply excess damage only if shield does not block excess damage",
-                                      "comment2": ""
+                                      "comment": "Apply excess damage only if shield does not block excess damage"
                                     },
                                     {
                                       "type": "BuiltinCommonInstructions::Standard",
@@ -43278,8 +43414,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "If MaxHealth is set, prevent health from going above it",
-                  "comment2": ""
+                  "comment": "If MaxHealth is set, prevent health from going above it"
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -43405,8 +43540,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "If Max Health is not set, do not enforce Max Health",
-                      "comment2": ""
+                      "comment": "If Max Health is not set, do not enforce Max Health"
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -43447,8 +43581,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "If Max Health is set and Overhealing is not allowed",
-                      "comment2": ""
+                      "comment": "If Max Health is set and Overhealing is not allowed"
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -43499,8 +43632,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Perform heal",
-                      "comment2": ""
+                      "comment": "Perform heal"
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -43529,8 +43661,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Update healing trigger",
-                      "comment2": ""
+                      "comment": "Update healing trigger"
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -43647,8 +43778,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Make sure Current Health does not exceed new Max Health",
-                  "comment2": ""
+                  "comment": "Make sure Current Health does not exceed new Max Health"
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -44782,8 +44912,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Mark that the object was hit at least once (used for initial state of damage cooldown)",
-                  "comment2": ""
+                  "comment": "Mark that the object was hit at least once (used for initial state of damage cooldown)"
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -44864,8 +44993,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "This condition is used to prevent \"damage cooldown\" from being active when the game starts.",
-                  "comment2": ""
+                  "comment": "This condition is used to prevent \"damage cooldown\" from being active when the game starts."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -46431,8 +46559,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "To be considered \"active\", a shield must have positive points AND not exceed duration",
-                  "comment2": ""
+                  "comment": "To be considered \"active\", a shield must have positive points AND not exceed duration"
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -46461,8 +46588,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Don't check the timer when duration is zero (or negative)",
-                      "comment2": ""
+                      "comment": "Don't check the timer when duration is zero (or negative)"
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -47086,8 +47212,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Creators can use the \"FireBullet\" action multiple times in a frame and it will be counted as a single \"shot\".",
-                      "comment2": ""
+                      "comment": "Creators can use the \"FireBullet\" action multiple times in a frame and it will be counted as a single \"shot\"."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -47150,8 +47275,7 @@
                                 "textG": 0,
                                 "textR": 0
                               },
-                              "comment": "Subtract 1 from ammo (if not unlimited ammo)",
-                              "comment2": ""
+                              "comment": "Subtract 1 from ammo (if not unlimited ammo)"
                             },
                             {
                               "type": "BuiltinCommonInstructions::Standard",
@@ -47303,8 +47427,7 @@
                                 "textG": 0,
                                 "textR": 0
                               },
-                              "comment": "Increase heat (if needed)",
-                              "comment2": ""
+                              "comment": "Increase heat (if needed)"
                             },
                             {
                               "type": "BuiltinCommonInstructions::Standard",
@@ -47345,8 +47468,7 @@
                                     "textG": 0,
                                     "textR": 0
                                   },
-                                  "comment": "Check if this caused overheat",
-                                  "comment2": ""
+                                  "comment": "Check if this caused overheat"
                                 },
                                 {
                                   "type": "BuiltinCommonInstructions::Standard",
@@ -47471,8 +47593,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Detect when reload is completed",
-                      "comment2": ""
+                      "comment": "Detect when reload is completed"
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -47561,8 +47682,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "Only reload the amount of ammo available",
-                          "comment2": ""
+                          "comment": "Only reload the amount of ammo available"
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -47955,8 +48075,7 @@
                                         "textG": 0,
                                         "textR": 0
                                       },
-                                      "comment": "Move temp variable to the next angle a bullet will be sent",
-                                      "comment2": ""
+                                      "comment": "Move temp variable to the next angle a bullet will be sent"
                                     },
                                     {
                                       "type": "BuiltinCommonInstructions::Standard",
@@ -48067,8 +48186,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Create bullet",
-                      "comment2": ""
+                      "comment": "Create bullet"
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -48098,8 +48216,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "Move bullet (apply angle and bullet speed variances)",
-                          "comment2": ""
+                          "comment": "Move bullet (apply angle and bullet speed variances)"
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -48139,8 +48256,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "Add identifier variables (to enable advanced picking by users)",
-                          "comment2": ""
+                          "comment": "Add identifier variables (to enable advanced picking by users)"
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -48191,8 +48307,7 @@
                             "textG": 0,
                             "textR": 0
                           },
-                          "comment": "Rotate newly created bullet, if needed",
-                          "comment2": ""
+                          "comment": "Rotate newly created bullet, if needed"
                         },
                         {
                           "type": "BuiltinCommonInstructions::Standard",
@@ -48232,8 +48347,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Update statistics",
-                      "comment2": ""
+                      "comment": "Update statistics"
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
@@ -50707,8 +50821,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "If Max Ammo is set, do not exceed the value",
-                  "comment2": ""
+                  "comment": "If Max Ammo is set, do not exceed the value"
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -51571,8 +51684,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Shots per reload must not be \"0\"",
-                  "comment2": ""
+                  "comment": "Shots per reload must not be \"0\""
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -69330,8 +69442,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "This is done after the events to allow users to read the previous value at the end of the change.",
-                  "comment2": ""
+                  "comment": "This is done after the events to allow users to read the previous value at the end of the change."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -69983,8 +70094,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "This allows to detect a change of \"intial value\" on hot reload.",
-                  "comment2": ""
+                  "comment": "This allows to detect a change of \"intial value\" on hot reload."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -70012,8 +70122,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Create the child-object instances.",
-                  "comment2": ""
+                  "comment": "Create the child-object instances."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -70114,8 +70223,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Create the label over the bar.",
-                  "comment2": ""
+                  "comment": "Create the label over the bar."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -70197,8 +70305,7 @@
                     "textG": 0,
                     "textR": 0
                   },
-                  "comment": "Pass the configuration to the behavior.",
-                  "comment2": ""
+                  "comment": "Pass the configuration to the behavior."
                 },
                 {
                   "type": "BuiltinCommonInstructions::Standard",
@@ -70413,8 +70520,7 @@
                         "textG": 0,
                         "textR": 0
                       },
-                      "comment": "Children instances must be resized when the parent size change:\n- background is resized to take the full dimensions of the parent\n- the bar size is refreshed according to the value\n- the label is put back at the center of the bar\n\nThe scale is set back to 1 because it means that the parent instance has the same dimensions as the union of its children instances.",
-                      "comment2": ""
+                      "comment": "Children instances must be resized when the parent size change:\n- background is resized to take the full dimensions of the parent\n- the bar size is refreshed according to the value\n- the label is put back at the center of the bar\n\nThe scale is set back to 1 because it means that the parent instance has the same dimensions as the union of its children instances."
                     },
                     {
                       "type": "BuiltinCommonInstructions::Standard",
