@@ -4315,6 +4315,52 @@
         "name": "NewSprite3",
         "smoothed": true,
         "userAdded": true
+      },
+      {
+        "file": "Assets2/telas/Xdevs.mp4",
+        "kind": "video",
+        "metadata": "",
+        "name": "Assets2\\telas\\Xdevs.mp4",
+        "userAdded": true
+      },
+      {
+        "file": "Assets2/som/efeito_sonoro/explosao.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets2\\som\\efeito_sonoro\\explosao.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Assets2/som/efeito_sonoro/canhao.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets2\\som\\efeito_sonoro\\canhao.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "file": "Assets2/som/efeito_sonoro/Sea Of Sound.wav",
+        "kind": "audio",
+        "metadata": "",
+        "name": "Assets2\\som\\efeito_sonoro\\Sea Of Sound.wav",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets2/stagezero/cenarios/istockphoto-149481764-612x612.jpg",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets2\\stagezero\\cenarios\\istockphoto-149481764-612x612.jpg",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -4356,7 +4402,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6481481481481483,
+        "zoomFactor": 0.6270053217371067,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -4365,29 +4411,14 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 286,
+          "height": 720,
           "layer": "",
-          "name": "title",
-          "persistentUuid": "454ad41a-993b-4168-891c-b1b402647d4d",
-          "width": 318,
-          "x": 350,
-          "y": 71,
+          "name": "Xdevs",
+          "persistentUuid": "d3829156-d93b-4527-846e-e02ec561427e",
+          "width": 1080,
+          "x": 0,
+          "y": 0,
           "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 193,
-          "layer": "",
-          "name": "index",
-          "persistentUuid": "c7788feb-b6ef-4659-9259-049a086dc7b9",
-          "width": 645,
-          "x": 192,
-          "y": 485,
-          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4396,65 +4427,17 @@
       "objects": [
         {
           "assetStoreId": "",
-          "name": "title",
+          "name": "Xdevs",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "Video::VideoObject",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\telas\\xdev.jpg",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "assetStoreId": "",
-          "bold": false,
-          "italic": false,
-          "name": "index",
-          "smoothed": true,
-          "tags": "",
-          "type": "TextObject::Text",
-          "underlined": false,
-          "variables": [],
-          "effects": [],
-          "behaviors": [],
-          "string": " Jogo desenvolvido durante a disciplina PAC-III \nCurso de engenharia de software \nProfº Claudinei",
-          "font": "",
-          "textAlignment": "center",
-          "characterSize": 30,
-          "color": {
-            "b": 255,
-            "g": 255,
-            "r": 255
+          "content": {
+            "opacity": 255,
+            "loop": false,
+            "volume": 100,
+            "videoResource": "Assets2\\telas\\Xdevs.mp4"
           }
         }
       ],
@@ -4493,14 +4476,10 @@
             },
             {
               "type": {
-                "value": "PlayMusic"
+                "value": "Video::Play"
               },
               "parameters": [
-                "",
-                "Assets2\\som\\musicas\\chee-zee-jungle.mp3",
-                "yes",
-                "60",
-                "1"
+                "Xdevs"
               ]
             }
           ]
@@ -4548,16 +4527,27 @@
           "conditions": [
             {
               "type": {
-                "value": "VarScene"
+                "value": "Video::Ended"
               },
               "parameters": [
-                "var_inicio_tempo",
-                "=",
-                "0"
+                "Xdevs"
               ]
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlayMusicCanal"
+              },
+              "parameters": [
+                "",
+                "Assets2\\som\\musicas\\chee-zee-jungle.mp3",
+                "1",
+                "60",
+                "60",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
@@ -4652,21 +4642,6 @@
         },
         {
           "angle": 0,
-          "customSize": true,
-          "height": 60,
-          "layer": "",
-          "name": "control",
-          "persistentUuid": "9f607b97-02e5-4160-8946-96a6a23c2339",
-          "width": 260,
-          "x": 410,
-          "y": 450,
-          "zOrder": 5,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -4685,27 +4660,12 @@
           "customSize": true,
           "height": 60,
           "layer": "",
-          "name": "credit",
-          "persistentUuid": "39d263cc-348e-485c-bddf-de99646fe51c",
-          "width": 260,
-          "x": 410,
-          "y": 540,
-          "zOrder": 6,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 60,
-          "layer": "",
-          "name": "jogar",
-          "persistentUuid": "3eaffad7-b3ed-4c6d-a592-dac5bab5197f",
+          "name": "btn_jogar",
+          "persistentUuid": "2152e392-b868-4b0f-a487-ca2e3e255c87",
           "width": 260,
           "x": 410,
           "y": 270,
-          "zOrder": 7,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4715,12 +4675,42 @@
           "customSize": true,
           "height": 60,
           "layer": "",
-          "name": "config",
-          "persistentUuid": "1ac42021-fdce-459f-ac17-9f349d38d25a",
+          "name": "btn_config",
+          "persistentUuid": "d11826ea-9f8b-4ffd-b99c-163fa2589a91",
           "width": 260,
           "x": 410,
           "y": 360,
-          "zOrder": 8,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "name": "btn_control",
+          "persistentUuid": "bda16213-5ac7-4d67-be8f-c93ff3d10dc6",
+          "width": 260,
+          "x": 410,
+          "y": 450,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "name": "btn_credit",
+          "persistentUuid": "ebceb35e-db79-4123-a7b8-59a90ca9e19f",
+          "width": 260,
+          "x": 410,
+          "y": 540,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -4752,292 +4742,260 @@
           "behaviors": []
         },
         {
-          "assetStoreId": "",
-          "name": "jogar",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_jogar",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-jogar-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-jogar-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-jogar-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-jogar-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-jogar-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-jogar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-jogar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         },
         {
-          "assetStoreId": "",
-          "name": "config",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_config",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-configuracao-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-configuracao-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-configuracao-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-configuracoes-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-configuracao-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-configuracao-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-configuracao-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         },
         {
-          "assetStoreId": "",
-          "name": "control",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_control",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-controle-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-controle-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-controle-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-controle-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-controle-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-controle-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-controle-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         },
         {
-          "assetStoreId": "",
-          "name": "credit",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_credit",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-creditos-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-creditos-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-creditos-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-creditos-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-creditos-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-creditos-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-creditos-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         }
       ],
       "events": [
@@ -5046,7 +5004,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn jogar",
+          "name": "btn_jogar",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -5055,12 +5013,10 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "SourisSurObjet"
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                   },
                   "parameters": [
-                    "jogar",
-                    "",
-                    "",
+                    "btn_jogar",
                     ""
                   ]
                 }
@@ -5068,80 +5024,24 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ChangeAnimation"
+                    "value": "PlaySound"
                   },
                   "parameters": [
-                    "jogar",
-                    "=",
+                    "",
+                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                    "no",
+                    "40",
                     "1"
                   ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "HasAnyTouchOrMouseStarted"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"stagemar\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                        "no",
-                        "40",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
+                    "value": "Scene"
                   },
                   "parameters": [
-                    "jogar",
                     "",
-                    "",
+                    "\"stagezero\"",
                     ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "jogar",
-                    "=",
-                    "0"
                   ]
                 }
               ]
@@ -5154,7 +5054,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn config",
+          "name": "btn_config",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -5163,12 +5063,10 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "SourisSurObjet"
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                   },
                   "parameters": [
-                    "config",
-                    "",
-                    "",
+                    "btn_config",
                     ""
                   ]
                 }
@@ -5176,80 +5074,24 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ChangeAnimation"
+                    "value": "PlaySound"
                   },
                   "parameters": [
-                    "config",
-                    "=",
+                    "",
+                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                    "no",
+                    "40",
                     "1"
                   ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "HasAnyTouchOrMouseStarted"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"main_config\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                        "no",
-                        "40",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
+                    "value": "Scene"
                   },
                   "parameters": [
-                    "config",
                     "",
-                    "",
+                    "\"main_config\"",
                     ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "config",
-                    "=",
-                    "0"
                   ]
                 }
               ]
@@ -5262,7 +5104,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn control",
+          "name": "btn_control",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -5271,12 +5113,10 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "SourisSurObjet"
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                   },
                   "parameters": [
-                    "control",
-                    "",
-                    "",
+                    "btn_control",
                     ""
                   ]
                 }
@@ -5284,80 +5124,24 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ChangeAnimation"
+                    "value": "PlaySound"
                   },
                   "parameters": [
-                    "control",
-                    "=",
+                    "",
+                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                    "no",
+                    "40",
                     "1"
                   ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "HasAnyTouchOrMouseStarted"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"main_control\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                        "no",
-                        "40",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
+                    "value": "Scene"
                   },
                   "parameters": [
-                    "control",
                     "",
-                    "",
+                    "\"main_control\"",
                     ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "control",
-                    "=",
-                    "0"
                   ]
                 }
               ]
@@ -5370,7 +5154,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn credit",
+          "name": "btn_credit",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -5379,12 +5163,10 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "SourisSurObjet"
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                   },
                   "parameters": [
-                    "credit",
-                    "",
-                    "",
+                    "btn_credit",
                     ""
                   ]
                 }
@@ -5392,80 +5174,24 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ChangeAnimation"
+                    "value": "PlaySound"
                   },
                   "parameters": [
-                    "credit",
-                    "=",
+                    "",
+                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                    "no",
+                    "40",
                     "1"
                   ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "HasAnyTouchOrMouseStarted"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"main_credit\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                        "no",
-                        "40",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
+                    "value": "Scene"
                   },
                   "parameters": [
-                    "credit",
                     "",
-                    "",
+                    "\"main_credit\"",
                     ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "credit",
-                    "=",
-                    "0"
                   ]
                 }
               ]
@@ -5533,21 +5259,6 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": true,
-          "height": 60,
-          "layer": "",
-          "name": "voltar",
-          "persistentUuid": "487b7254-4620-42c6-976d-b9d3e6dd1360",
-          "width": 260,
-          "x": 410,
-          "y": 510,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -5581,11 +5292,26 @@
           "customSize": true,
           "height": 50,
           "layer": "",
-          "name": "on_e_off",
+          "name": "btn_musica",
           "persistentUuid": "b99aa3eb-3a58-4a5f-9204-ea4f445e291e",
           "width": 120,
           "x": 570,
-          "y": 280,
+          "y": 285,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "name": "btn_voltar",
+          "persistentUuid": "22705050-c18f-4699-bddb-a52949cd2d0b",
+          "width": 260,
+          "x": 410,
+          "y": 510,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -5596,11 +5322,11 @@
           "customSize": true,
           "height": 50,
           "layer": "",
-          "name": "on_e_off",
-          "persistentUuid": "5f25c720-20ab-47de-a903-33cd39cb25a6",
+          "name": "btn_som",
+          "persistentUuid": "8996e281-3645-410c-a4b3-567c3df435a5",
           "width": 120,
           "x": 570,
-          "y": 390,
+          "y": 385,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -5634,7 +5360,7 @@
         },
         {
           "assetStoreId": "99f912de1cf5033ae934a8453c2f98a712955bcdb5ea1b1fda2fe2aa616de4a9",
-          "name": "on_e_off",
+          "name": "btn_musica",
           "tags": "",
           "type": "SpriteToggleSwitch::SpriteToggleSwitch",
           "variables": [],
@@ -5657,7 +5383,7 @@
                       "sprites": [
                         {
                           "hasCustomCollisionMask": false,
-                          "image": "Assets2\\botoes\\botao-on.png",
+                          "image": "Assets2\\botoes\\botao-off.png",
                           "points": [],
                           "originPoint": {
                             "name": "origine",
@@ -5686,7 +5412,7 @@
                       "sprites": [
                         {
                           "hasCustomCollisionMask": false,
-                          "image": "Assets2\\botoes\\botao-off.png",
+                          "image": "Assets2\\botoes\\botao-on.png",
                           "points": [],
                           "originPoint": {
                             "name": "origine",
@@ -5710,108 +5436,157 @@
           }
         },
         {
-          "assetStoreId": "",
-          "name": "voltar",
+          "assetStoreId": "99f912de1cf5033ae934a8453c2f98a712955bcdb5ea1b1fda2fe2aa616de4a9",
+          "name": "btn_som",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "SpriteToggleSwitch::SpriteToggleSwitch",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-voltar-branco",
-              "useMultipleDirections": false,
-              "directions": [
+          "content": {
+            "IsChecked": true
+          },
+          "childrenContent": {
+            "State": {
+              "updateIfNotVisible": false,
+              "animations": [
                 {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
+                  "name": "Unchecked",
+                  "useMultipleDirections": false,
+                  "directions": [
                     {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-voltar-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": false,
+                          "image": "Assets2\\botoes\\botao-off.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": []
+                        }
+                      ]
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "name": "Assets2\\botoes\\botao-voltar-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
+                },
                 {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
+                  "name": "Checked",
+                  "useMultipleDirections": false,
+                  "directions": [
                     {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-voltar-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
+                      "looping": false,
+                      "timeBetweenFrames": 0.08,
+                      "sprites": [
+                        {
+                          "hasCustomCollisionMask": false,
+                          "image": "Assets2\\botoes\\botao-on.png",
+                          "points": [],
+                          "originPoint": {
+                            "name": "origine",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "centerPoint": {
+                            "automatic": true,
+                            "name": "centre",
+                            "x": 0,
+                            "y": 0
+                          },
+                          "customCollisionMask": []
+                        }
+                      ]
                     }
                   ]
                 }
               ]
             }
-          ]
+          }
+        },
+        {
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_voltar",
+          "tags": "",
+          "type": "PanelSpriteButton::PanelSpriteButton",
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            }
+          }
         }
       ],
       "events": [
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
         {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn on_e_off",
+          "name": "btn_musica",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "HasAnyTouchOrMouseStarted"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": []
-            }
-          ],
+          "events": [],
           "parameters": []
         },
         {
@@ -5819,7 +5594,18 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn voltar",
+          "name": "btn_som",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "btn_voltar",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -5828,12 +5614,10 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "SourisSurObjet"
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                   },
                   "parameters": [
-                    "voltar",
-                    "",
-                    "",
+                    "btn_voltar",
                     ""
                   ]
                 }
@@ -5841,80 +5625,24 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ChangeAnimation"
+                    "value": "PlaySound"
                   },
                   "parameters": [
-                    "voltar",
-                    "=",
+                    "",
+                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                    "",
+                    "40",
                     "1"
                   ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "HasAnyTouchOrMouseStarted"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                        "",
-                        "40",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"pause\"",
-                        ""
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
+                    "value": "Scene"
                   },
                   "parameters": [
-                    "voltar",
                     "",
-                    "",
+                    "\"pause\"",
                     ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "voltar",
-                    "=",
-                    "0"
                   ]
                 }
               ]
@@ -5982,21 +5710,6 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": true,
-          "height": 60,
-          "layer": "",
-          "name": "voltar",
-          "persistentUuid": "487b7254-4620-42c6-976d-b9d3e6dd1360",
-          "width": 260,
-          "x": 410,
-          "y": 510,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -6030,7 +5743,7 @@
           "customSize": true,
           "height": 50,
           "layer": "",
-          "name": "musica",
+          "name": "btn_musica",
           "persistentUuid": "8f284c8e-e96b-4ede-ba5d-875c1d4f2037",
           "width": 120,
           "x": 570,
@@ -6045,11 +5758,26 @@
           "customSize": true,
           "height": 50,
           "layer": "",
-          "name": "som",
+          "name": "btn_som",
           "persistentUuid": "89db07c8-2137-487f-8914-db795e3be7e2",
           "width": 120,
           "x": 570,
           "y": 385,
+          "zOrder": 3,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "name": "btn_voltar",
+          "persistentUuid": "99000dfb-e075-497b-a512-e8151d6652e1",
+          "width": 260,
+          "x": 410,
+          "y": 510,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -6083,7 +5811,7 @@
         },
         {
           "assetStoreId": "99f912de1cf5033ae934a8453c2f98a712955bcdb5ea1b1fda2fe2aa616de4a9",
-          "name": "musica",
+          "name": "btn_musica",
           "tags": "",
           "type": "SpriteToggleSwitch::SpriteToggleSwitch",
           "variables": [],
@@ -6158,7 +5886,7 @@
         },
         {
           "assetStoreId": "99f912de1cf5033ae934a8453c2f98a712955bcdb5ea1b1fda2fe2aa616de4a9",
-          "name": "som",
+          "name": "btn_som",
           "tags": "",
           "type": "SpriteToggleSwitch::SpriteToggleSwitch",
           "variables": [],
@@ -6232,190 +5960,107 @@
           }
         },
         {
-          "assetStoreId": "",
-          "name": "voltar",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_voltar",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-voltar-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-voltar-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-voltar-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-voltar-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         }
       ],
       "events": [
         {
           "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "btn musica",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
+          "conditions": [
             {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
             }
           ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "btn som",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
-            }
-          ],
-          "parameters": []
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "btn voltar",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
+          "actions": [],
           "events": [
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
                   "type": {
-                    "value": "SourisSurObjet"
+                    "value": "MusicPlaying"
                   },
                   "parameters": [
-                    "voltar",
-                    "",
-                    "",
-                    ""
+                    "btn_musica",
+                    "1"
                   ]
                 }
               ],
               "actions": [
                 {
                   "type": {
-                    "value": "ChangeAnimation"
+                    "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetChecked"
                   },
                   "parameters": [
-                    "voltar",
-                    "=",
-                    "1"
-                  ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "HasAnyTouchOrMouseStarted"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                        "",
-                        "40",
-                        "1"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"main_menu\"",
-                        ""
-                      ]
-                    }
+                    "btn_musica",
+                    "yes",
+                    ""
                   ]
                 }
               ]
@@ -6425,13 +6070,47 @@
               "conditions": [
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
+                    "value": "MusicPaused"
                   },
                   "parameters": [
-                    "voltar",
                     "",
-                    "",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SpriteToggleSwitch::SpriteToggleSwitch::SetChecked"
+                  },
+                  "parameters": [
+                    "btn_musica",
+                    "no",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "btn_musica",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SpriteToggleSwitch::SpriteToggleSwitch::HasJustBeenChecked"
+                  },
+                  "parameters": [
+                    "btn_musica",
                     ""
                   ]
                 }
@@ -6439,12 +6118,103 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ChangeAnimation"
+                    "value": "RePlayMusicCanal"
                   },
                   "parameters": [
-                    "voltar",
-                    "=",
-                    "0"
+                    "",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "SpriteToggleSwitch::SpriteToggleSwitch::HasJustBeenUnchecked"
+                  },
+                  "parameters": [
+                    "btn_musica",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PauseMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "btn_som",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "btn_voltar",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
+                  },
+                  "parameters": [
+                    "btn_voltar",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                    "",
+                    "40",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Scene"
+                  },
+                  "parameters": [
+                    "",
+                    "\"main_menu\"",
+                    ""
                   ]
                 }
               ]
@@ -6512,21 +6282,6 @@
       "instances": [
         {
           "angle": 0,
-          "customSize": true,
-          "height": 60,
-          "layer": "",
-          "name": "voltar",
-          "persistentUuid": "c9a20a35-12c5-4089-bcc0-e81f72076067",
-          "width": 260,
-          "x": 410,
-          "y": 570,
-          "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
           "customSize": false,
           "height": 0,
           "layer": "",
@@ -6551,6 +6306,21 @@
           "x": 0,
           "y": 0,
           "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 60,
+          "layer": "",
+          "name": "btn_voltar",
+          "persistentUuid": "b4c5f8ec-4914-4c8f-90ce-b85a01b16e16",
+          "width": 260,
+          "x": 410,
+          "y": 570,
+          "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -6582,76 +6352,68 @@
           "behaviors": []
         },
         {
-          "assetStoreId": "",
-          "name": "voltar",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_voltar",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-voltar-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-voltar-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-voltar-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-voltar-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         }
       ],
       "events": [
@@ -6660,7 +6422,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn voltar",
+          "name": "btn_voltar",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -6669,12 +6431,10 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "SourisSurObjet"
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                   },
                   "parameters": [
-                    "voltar",
-                    "",
-                    "",
+                    "btn_voltar",
                     ""
                   ]
                 }
@@ -6682,80 +6442,24 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ChangeAnimation"
+                    "value": "PlaySound"
                   },
                   "parameters": [
-                    "voltar",
-                    "=",
+                    "",
+                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                    "",
+                    "40",
                     "1"
                   ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "HasAnyTouchOrMouseStarted"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"main_menu\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                        "",
-                        "40",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
+                    "value": "Scene"
                   },
                   "parameters": [
-                    "voltar",
                     "",
-                    "",
+                    "\"main_menu\"",
                     ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "voltar",
-                    "=",
-                    "0"
                   ]
                 }
               ]
@@ -6856,8 +6560,8 @@
           "customSize": true,
           "height": 60,
           "layer": "",
-          "name": "voltar",
-          "persistentUuid": "2267fa98-9086-4c5f-9c12-1b8c6fa6cee1",
+          "name": "btn_voltar",
+          "persistentUuid": "c1a5537c-f301-4d66-9410-faf7c4c99023",
           "width": 260,
           "x": 410,
           "y": 510,
@@ -6893,76 +6597,68 @@
           "behaviors": []
         },
         {
-          "assetStoreId": "",
-          "name": "voltar",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_voltar",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-voltar-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-voltar-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-voltar-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-voltar-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         }
       ],
       "events": [
@@ -6971,7 +6667,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn voltar",
+          "name": "btn_voltar",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -6980,12 +6676,10 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "SourisSurObjet"
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                   },
                   "parameters": [
-                    "voltar",
-                    "",
-                    "",
+                    "btn_voltar",
                     ""
                   ]
                 }
@@ -6993,80 +6687,24 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ChangeAnimation"
+                    "value": "PlaySound"
                   },
                   "parameters": [
-                    "voltar",
-                    "=",
+                    "",
+                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                    "",
+                    "40",
                     "1"
                   ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "HasAnyTouchOrMouseStarted"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"pause\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                        "",
-                        "40",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
+                    "value": "Scene"
                   },
                   "parameters": [
-                    "voltar",
                     "",
-                    "",
+                    "\"pause\"",
                     ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "voltar",
-                    "=",
-                    "0"
                   ]
                 }
               ]
@@ -7167,8 +6805,8 @@
           "customSize": true,
           "height": 60,
           "layer": "",
-          "name": "voltar",
-          "persistentUuid": "2267fa98-9086-4c5f-9c12-1b8c6fa6cee1",
+          "name": "btn_voltar",
+          "persistentUuid": "41741586-41d1-452c-84a8-91db7f4fe987",
           "width": 260,
           "x": 410,
           "y": 510,
@@ -7204,76 +6842,68 @@
           "behaviors": []
         },
         {
-          "assetStoreId": "",
-          "name": "voltar",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_voltar",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-voltar-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-voltar-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-voltar-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "metadata": "{\"pskl\":{}}",
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-voltar-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-voltar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         }
       ],
       "events": [
@@ -7291,12 +6921,10 @@
               "conditions": [
                 {
                   "type": {
-                    "value": "SourisSurObjet"
+                    "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
                   },
                   "parameters": [
-                    "voltar",
-                    "",
-                    "",
+                    "btn_voltar",
                     ""
                   ]
                 }
@@ -7304,80 +6932,24 @@
               "actions": [
                 {
                   "type": {
-                    "value": "ChangeAnimation"
+                    "value": "PlaySound"
                   },
                   "parameters": [
-                    "voltar",
-                    "=",
+                    "",
+                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                    "",
+                    "40",
                     "1"
                   ]
-                }
-              ],
-              "events": [
-                {
-                  "type": "BuiltinCommonInstructions::Standard",
-                  "conditions": [
-                    {
-                      "type": {
-                        "value": "HasAnyTouchOrMouseStarted"
-                      },
-                      "parameters": [
-                        ""
-                      ]
-                    }
-                  ],
-                  "actions": [
-                    {
-                      "type": {
-                        "value": "Scene"
-                      },
-                      "parameters": [
-                        "",
-                        "\"main_menu\"",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "PlaySound"
-                      },
-                      "parameters": [
-                        "",
-                        "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                        "",
-                        "40",
-                        "1"
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
+                },
                 {
                   "type": {
-                    "inverted": true,
-                    "value": "SourisSurObjet"
+                    "value": "Scene"
                   },
                   "parameters": [
-                    "voltar",
                     "",
-                    "",
+                    "\"main_menu\"",
                     ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "ChangeAnimation"
-                  },
-                  "parameters": [
-                    "voltar",
-                    "=",
-                    "0"
                   ]
                 }
               ]
@@ -7460,11 +7032,26 @@
         },
         {
           "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "borda_tela",
+          "persistentUuid": "d1746b4a-a5f7-480b-9740-2e6bf181e2c4",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
           "customSize": true,
           "height": 60,
           "layer": "",
-          "name": "sim",
-          "persistentUuid": "dff5f2fc-9a84-4dcc-b211-4d66417e9af5",
+          "name": "btn_sim",
+          "persistentUuid": "09eb1313-6bf9-42d1-8dae-0800a3ce7c78",
           "width": 150,
           "x": 350,
           "y": 440,
@@ -7478,27 +7065,12 @@
           "customSize": true,
           "height": 60,
           "layer": "",
-          "name": "nao",
-          "persistentUuid": "ac428c23-7b7c-4a6e-a753-0efaafa6a8ed",
+          "name": "btn_nao",
+          "persistentUuid": "af95afe9-0193-427b-b518-70720de0355b",
           "width": 150,
           "x": 590,
           "y": 440,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "borda_tela",
-          "persistentUuid": "d1746b4a-a5f7-480b-9740-2e6bf181e2c4",
-          "width": 0,
-          "x": 0,
-          "y": 0,
-          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -7530,144 +7102,132 @@
           "behaviors": []
         },
         {
-          "assetStoreId": "",
-          "name": "sim",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_sim",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-sim-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-sim-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-sim-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-sim-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-sim-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-sim-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-sim-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         },
         {
-          "assetStoreId": "",
-          "name": "nao",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_nao",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-nao-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-nao-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-nao-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-nao-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-nao-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         }
       ],
       "events": [
@@ -7756,28 +7316,49 @@
           ]
         },
         {
-          "disabled": true,
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "btn_sim",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
               "type": {
-                "value": "VarScene"
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "var_timer_gamerover",
-                "=",
-                "0"
+                "btn_sim",
+                ""
               ]
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                "",
+                "40",
+                "1"
+              ]
+            },
             {
               "type": {
                 "value": "Scene"
               },
               "parameters": [
                 "",
-                "\"main_menu\"",
+                "\"stagezero\"",
                 ""
               ]
             }
@@ -7788,7 +7369,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn sim",
+          "name": "btn_nao",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [],
@@ -7799,12 +7380,10 @@
           "conditions": [
             {
               "type": {
-                "value": "SourisSurObjet"
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "sim",
-                "",
-                "",
+                "btn_nao",
                 ""
               ]
             }
@@ -7812,187 +7391,24 @@
           "actions": [
             {
               "type": {
-                "value": "ChangeAnimation"
+                "value": "PlaySound"
               },
               "parameters": [
-                "sim",
-                "=",
+                "",
+                "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                "",
+                "40",
                 "1"
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "HasAnyTouchOrMouseStarted"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"stagezero\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                    "",
-                    "40",
-                    "1"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
+                "value": "Scene"
               },
               "parameters": [
-                "sim",
                 "",
-                "",
+                "\"inicio_gamer\"",
                 ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "sim",
-                "=",
-                "0"
-              ]
-            }
-          ]
-        },
-        {
-          "colorB": 228,
-          "colorG": 176,
-          "colorR": 74,
-          "creationTime": 0,
-          "name": "btn nao",
-          "source": "",
-          "type": "BuiltinCommonInstructions::Group",
-          "events": [],
-          "parameters": []
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "nao",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "nao",
-                "=",
-                "1"
-              ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "HasAnyTouchOrMouseStarted"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"inicio_gamer\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                    "",
-                    "40",
-                    "1"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
-            {
-              "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
-              },
-              "parameters": [
-                "nao",
-                "",
-                "",
-                ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "nao",
-                "=",
-                "0"
               ]
             }
           ]
@@ -8079,11 +7495,26 @@
         },
         {
           "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "borda_tela",
+          "persistentUuid": "fdb98bd4-0065-4f80-a70d-8b7e07f3408a",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
           "customSize": true,
           "height": 60,
           "layer": "",
-          "name": "continuar",
-          "persistentUuid": "c3664d0f-f73b-4ab2-a108-88f01fd0a1cc",
+          "name": "btn_continuar",
+          "persistentUuid": "0c299d0b-c685-4aff-8b6f-6ac6afcfbc64",
           "width": 260,
           "x": 410,
           "y": 270,
@@ -8097,11 +7528,11 @@
           "customSize": true,
           "height": 60,
           "layer": "",
-          "name": "sair",
-          "persistentUuid": "b4aff019-df05-4bf9-bcb3-b55c2bbe8481",
+          "name": "btn_config",
+          "persistentUuid": "eb45bfd8-0ceb-4ce0-8f37-7a1109ff2ed2",
           "width": 260,
           "x": 410,
-          "y": 540,
+          "y": 360,
           "zOrder": 3,
           "numberProperties": [],
           "stringProperties": [],
@@ -8112,8 +7543,8 @@
           "customSize": true,
           "height": 60,
           "layer": "",
-          "name": "control",
-          "persistentUuid": "3847e7f0-3bfe-4a88-8b70-0bc66609284b",
+          "name": "btn_control",
+          "persistentUuid": "2b4f9542-1921-4cb6-a533-5c38713ea97c",
           "width": 260,
           "x": 410,
           "y": 450,
@@ -8127,27 +7558,12 @@
           "customSize": true,
           "height": 60,
           "layer": "",
-          "name": "config",
-          "persistentUuid": "a1e774fb-722f-449a-bdc8-c7ed26fa482f",
+          "name": "btn_sair",
+          "persistentUuid": "4d1d148b-9fec-4f1f-a8ef-e4a21b5a0d30",
           "width": 260,
           "x": 410,
-          "y": 360,
+          "y": 540,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "borda_tela",
-          "persistentUuid": "fdb98bd4-0065-4f80-a70d-8b7e07f3408a",
-          "width": 0,
-          "x": 0,
-          "y": 0,
-          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -8179,284 +7595,260 @@
           "behaviors": []
         },
         {
-          "assetStoreId": "",
-          "name": "continuar",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_continuar",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-continuar-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-continuar-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-continuar-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-continuar-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-continuar-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-continuar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-continuar-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         },
         {
-          "assetStoreId": "",
-          "name": "config",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_config",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-configuracao-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-configuracao-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-configuracao-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-configuracao-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-configuracao-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-configuracao-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-configuracao-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         },
         {
-          "assetStoreId": "",
-          "name": "control",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_control",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-controle-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-controle-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-controle-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-controle-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-controle-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-controle-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-controle-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         },
         {
-          "assetStoreId": "",
-          "name": "sair",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_sair",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-sair-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-sair-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-sair-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-sair-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-sair-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-sair-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-sair-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         }
       ],
       "events": [
@@ -8489,7 +7881,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn continuar",
+          "name": "btn_continuar",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [],
@@ -8500,12 +7892,10 @@
           "conditions": [
             {
               "type": {
-                "value": "SourisSurObjet"
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "continuar",
-                "",
-                "",
+                "btn_continuar",
                 ""
               ]
             }
@@ -8513,78 +7903,22 @@
           "actions": [
             {
               "type": {
-                "value": "ChangeAnimation"
+                "value": "PlaySound"
               },
               "parameters": [
-                "continuar",
-                "=",
+                "",
+                "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                "",
+                "40",
                 "1"
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "HasAnyTouchOrMouseStarted"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "PopScene"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                    "",
-                    "40",
-                    "1"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
+                "value": "PopScene"
               },
               "parameters": [
-                "continuar",
-                "",
-                "",
                 ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "continuar",
-                "=",
-                "0"
               ]
             }
           ]
@@ -8594,7 +7928,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn config",
+          "name": "btn_config",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [],
@@ -8605,12 +7939,10 @@
           "conditions": [
             {
               "type": {
-                "value": "SourisSurObjet"
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "config",
-                "",
-                "",
+                "btn_config",
                 ""
               ]
             }
@@ -8618,80 +7950,24 @@
           "actions": [
             {
               "type": {
-                "value": "ChangeAnimation"
+                "value": "PlaySound"
               },
               "parameters": [
-                "config",
-                "=",
+                "",
+                "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                "",
+                "40",
                 "1"
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "HasAnyTouchOrMouseStarted"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"main_config2\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                    "",
-                    "40",
-                    "1"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
+                "value": "Scene"
               },
               "parameters": [
-                "config",
                 "",
-                "",
+                "\"main_config2\"",
                 ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "config",
-                "=",
-                "0"
               ]
             }
           ]
@@ -8701,7 +7977,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn control",
+          "name": "btn_control",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [],
@@ -8712,12 +7988,10 @@
           "conditions": [
             {
               "type": {
-                "value": "SourisSurObjet"
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "control",
-                "",
-                "",
+                "btn_control",
                 ""
               ]
             }
@@ -8725,80 +7999,24 @@
           "actions": [
             {
               "type": {
-                "value": "ChangeAnimation"
+                "value": "PlaySound"
               },
               "parameters": [
-                "control",
-                "=",
+                "",
+                "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                "",
+                "40",
                 "1"
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "HasAnyTouchOrMouseStarted"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"main_control2\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                    "",
-                    "40",
-                    "1"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
+                "value": "Scene"
               },
               "parameters": [
-                "control",
                 "",
-                "",
+                "\"main_control2\"",
                 ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "control",
-                "=",
-                "0"
               ]
             }
           ]
@@ -8808,7 +8026,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn sair",
+          "name": "btn_sair",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [],
@@ -8819,12 +8037,10 @@
           "conditions": [
             {
               "type": {
-                "value": "SourisSurObjet"
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "sair",
-                "",
-                "",
+                "btn_sair",
                 ""
               ]
             }
@@ -8832,80 +8048,24 @@
           "actions": [
             {
               "type": {
-                "value": "ChangeAnimation"
+                "value": "PlaySound"
               },
               "parameters": [
-                "sair",
-                "=",
+                "",
+                "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                "",
+                "40",
                 "1"
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "HasAnyTouchOrMouseStarted"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"atencao\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                    "",
-                    "40",
-                    "1"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
+                "value": "Scene"
               },
               "parameters": [
-                "sair",
                 "",
-                "",
+                "\"atencao\"",
                 ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "sair",
-                "=",
-                "0"
               ]
             }
           ]
@@ -8985,11 +8145,26 @@
         },
         {
           "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "borda_tela",
+          "persistentUuid": "ad043aeb-f6a0-4dc4-8c38-c5f98ec22eba",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 2,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
           "customSize": true,
           "height": 60,
           "layer": "",
-          "name": "sim",
-          "persistentUuid": "87691971-188f-468c-a8f2-acd9b77a8803",
+          "name": "btn_sim",
+          "persistentUuid": "fd75b3b8-ee5a-4f38-8346-fc75c7e88dcd",
           "width": 150,
           "x": 350,
           "y": 420,
@@ -9003,27 +8178,12 @@
           "customSize": true,
           "height": 60,
           "layer": "",
-          "name": "nao",
-          "persistentUuid": "98b9450a-46e2-4103-9797-f1f37770a0a7",
+          "name": "btn_nao",
+          "persistentUuid": "104e45ad-c400-4b5b-b3f1-707d1d36696f",
           "width": 150,
           "x": 590,
           "y": 420,
           "zOrder": 3,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "",
-          "name": "borda_tela",
-          "persistentUuid": "ad043aeb-f6a0-4dc4-8c38-c5f98ec22eba",
-          "width": 0,
-          "x": 0,
-          "y": 0,
-          "zOrder": 2,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -9055,144 +8215,132 @@
           "behaviors": []
         },
         {
-          "assetStoreId": "",
-          "name": "sim",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_sim",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-sim-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-sim-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-sim-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-sim-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-sim-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-sim-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-sim-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         },
         {
-          "assetStoreId": "",
-          "name": "nao",
+          "assetStoreId": "d00645a899e762e085fa6fdf2625701baea9cc10ee903a64ca7d371e5bbb8dca",
+          "name": "btn_nao",
           "tags": "",
-          "type": "Sprite",
-          "updateIfNotVisible": false,
+          "type": "PanelSpriteButton::PanelSpriteButton",
           "variables": [],
           "effects": [],
           "behaviors": [],
-          "animations": [
-            {
-              "name": "Assets2\\botoes\\botao-nao-branco",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-nao-branco.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+          "content": {
+            "LeftPadding": 0,
+            "RightPadding": 0,
+            "PressedLabelOffsetY": 2,
+            "BottomPadding": 4,
+            "TopPadding": 0,
+            "HoveredFadeOutDuration": 0
+          },
+          "childrenContent": {
+            "Hovered": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-nao-vermelho.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             },
-            {
-              "name": "Assets2\\botoes\\botao-nao-vermelho",
-              "useMultipleDirections": false,
-              "directions": [
-                {
-                  "looping": false,
-                  "timeBetweenFrames": 0.08,
-                  "sprites": [
-                    {
-                      "hasCustomCollisionMask": false,
-                      "image": "Assets2\\botoes\\botao-nao-vermelho.png",
-                      "points": [],
-                      "originPoint": {
-                        "name": "origine",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "centerPoint": {
-                        "automatic": true,
-                        "name": "centre",
-                        "x": 0,
-                        "y": 0
-                      },
-                      "customCollisionMask": []
-                    }
-                  ]
-                }
-              ]
+            "Idle": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-nao-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
+            },
+            "Label": {
+              "bold": false,
+              "italic": false,
+              "smoothed": true,
+              "underlined": false,
+              "string": "",
+              "font": "CarterOne-Regular.ttf",
+              "textAlignment": "center",
+              "characterSize": 40,
+              "color": {
+                "b": 255,
+                "g": 255,
+                "r": 255
+              }
+            },
+            "Pressed": {
+              "bottomMargin": 10,
+              "height": 64,
+              "leftMargin": 6,
+              "rightMargin": 6,
+              "texture": "Assets2\\botoes\\botao-nao-branco.png",
+              "tiled": false,
+              "topMargin": 10,
+              "width": 192
             }
-          ]
+          }
         }
       ],
       "events": [
@@ -9201,7 +8349,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn sim",
+          "name": "btn_sim",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [],
@@ -9212,12 +8360,10 @@
           "conditions": [
             {
               "type": {
-                "value": "SourisSurObjet"
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "sim",
-                "",
-                "",
+                "btn_sim",
                 ""
               ]
             }
@@ -9225,80 +8371,24 @@
           "actions": [
             {
               "type": {
-                "value": "ChangeAnimation"
+                "value": "PlaySound"
               },
               "parameters": [
-                "sim",
-                "=",
+                "",
+                "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                "",
+                "40",
                 "1"
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "HasAnyTouchOrMouseStarted"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"inicio_gamer\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                    "",
-                    "40",
-                    "1"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
+                "value": "Scene"
               },
               "parameters": [
-                "sim",
                 "",
-                "",
+                "\"inicio_gamer\"",
                 ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "sim",
-                "=",
-                "0"
               ]
             }
           ]
@@ -9308,7 +8398,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "btn nao",
+          "name": "btn_nao",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [],
@@ -9319,12 +8409,10 @@
           "conditions": [
             {
               "type": {
-                "value": "SourisSurObjet"
+                "value": "PanelSpriteButton::PanelSpriteButton::IsClicked"
               },
               "parameters": [
-                "nao",
-                "",
-                "",
+                "btn_nao",
                 ""
               ]
             }
@@ -9332,80 +8420,24 @@
           "actions": [
             {
               "type": {
-                "value": "ChangeAnimation"
+                "value": "PlaySound"
               },
               "parameters": [
-                "nao",
-                "=",
+                "",
+                "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
+                "",
+                "40",
                 "1"
               ]
-            }
-          ],
-          "events": [
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [
-                {
-                  "type": {
-                    "value": "HasAnyTouchOrMouseStarted"
-                  },
-                  "parameters": [
-                    ""
-                  ]
-                }
-              ],
-              "actions": [
-                {
-                  "type": {
-                    "value": "Scene"
-                  },
-                  "parameters": [
-                    "",
-                    "\"pause\"",
-                    ""
-                  ]
-                },
-                {
-                  "type": {
-                    "value": "PlaySound"
-                  },
-                  "parameters": [
-                    "",
-                    "Assets2\\som\\efeito_sonoro\\clicksoundeffect.mp3",
-                    "",
-                    "40",
-                    "1"
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+            },
             {
               "type": {
-                "inverted": true,
-                "value": "SourisSurObjet"
+                "value": "Scene"
               },
               "parameters": [
-                "nao",
                 "",
-                "",
+                "\"pause\"",
                 ""
-              ]
-            }
-          ],
-          "actions": [
-            {
-              "type": {
-                "value": "ChangeAnimation"
-              },
-              "parameters": [
-                "nao",
-                "=",
-                "0"
               ]
             }
           ]
@@ -13104,7 +12136,7 @@
                   },
                   "parameters": [
                     "",
-                    "som\\explosao.wav",
+                    "Assets2\\som\\efeito_sonoro\\explosao.wav",
                     "",
                     "50",
                     ""
@@ -13647,7 +12679,7 @@
                   },
                   "parameters": [
                     "",
-                    "som\\canhao.wav",
+                    "Assets2\\som\\efeito_sonoro\\canhao.wav",
                     "",
                     "2",
                     ""
@@ -13755,7 +12787,7 @@
                   },
                   "parameters": [
                     "",
-                    "som\\canhao.wav",
+                    "Assets2\\som\\efeito_sonoro\\canhao.wav",
                     "",
                     "2",
                     ""
@@ -13830,7 +12862,7 @@
                   },
                   "parameters": [
                     "",
-                    "som\\Sea Of Sound.wav",
+                    "Assets2\\som\\efeito_sonoro\\Sea Of Sound.wav",
                     "yes",
                     "5",
                     ""
@@ -13952,7 +12984,7 @@
                   },
                   "parameters": [
                     "",
-                    "som\\explosao.wav",
+                    "Assets2\\som\\efeito_sonoro\\explosao.wav",
                     "",
                     "50",
                     ""
@@ -14283,7 +13315,7 @@
                   },
                   "parameters": [
                     "",
-                    "som\\explosao.wav",
+                    "Assets2\\som\\efeito_sonoro\\explosao.wav",
                     "",
                     "50",
                     ""
@@ -14392,7 +13424,7 @@
                   },
                   "parameters": [
                     "",
-                    "som\\explosao.wav",
+                    "Assets2\\som\\efeito_sonoro\\explosao.wav",
                     "",
                     "50",
                     ""
@@ -40479,7 +39511,7 @@
           "height": 32,
           "name": "background",
           "tags": "",
-          "texture": "istockphoto-149481764-612x612.jpg2",
+          "texture": "Assets2\\stagezero\\cenarios\\istockphoto-149481764-612x612.jpg",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
