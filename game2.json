@@ -8,6 +8,8 @@
   },
   "properties": {
     "adaptGameResolutionAtRuntime": true,
+    "antialiasingMode": "MSAA",
+    "antialisingEnabledOnMobile": false,
     "folderProject": false,
     "orientation": "default",
     "packageName": "com.example.gamename",
@@ -4357,7 +4359,7 @@
         "alwaysLoaded": false,
         "file": "Assets2/stagezero/cenarios/istockphoto-149481764-612x612.jpg",
         "kind": "image",
-        "metadata": "",
+        "metadata": "{\"localFilePath\":\"Assets2/stagezero/cenarios/istockphoto-149481764-612x612.jpg\",\"extension\":\".png\",\"pskl\":{}}",
         "name": "Assets2\\stagezero\\cenarios\\istockphoto-149481764-612x612.jpg",
         "smoothed": true,
         "userAdded": true
@@ -5307,6 +5309,60 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/pzUH Pack/Worlds/Graveyard/07baf2d2bca80060a668c2d603142ec051a783d5406037d58be71b315d7f30f7_Graveyard Bone 2.png",
           "name": "gdevelop-asset-store"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets2/stagezero/botao-teclado-f1.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets2\\stagezero\\botao-teclado-f1.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets2/stagezero/botao-teclado-f2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets2\\stagezero\\botao-teclado-f2.png",
+        "smoothed": true,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "Assets2/stagezero/entrar.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Assets2\\stagezero\\entrar.png",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Assets2_stagezero_cenarios_istockphoto-149481764-612x612.jpg2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Assets2\\stagezero\\cenarios\\istockphoto-149481764-612x612.jpg2",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite4.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite4",
+        "smoothed": true,
+        "userAdded": true
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Assets2_stagezero_cenarios_istockphoto-149481764-612x612.jpg3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "Assets2\\stagezero\\cenarios\\istockphoto-149481764-612x612.jpg3",
+        "smoothed": true,
+        "userAdded": true
       }
     ],
     "resourceFolders": []
@@ -5557,15 +5613,15 @@
       "behaviorsSharedData": []
     },
     {
-      "b": 209,
+      "b": 0,
       "disableInputWhenNotFocused": true,
       "mangledName": "main_95menu",
       "name": "main_menu",
-      "r": 209,
+      "r": 0,
       "standardSortMethod": true,
       "stopSoundsOnStartup": false,
       "title": "",
-      "v": 209,
+      "v": 0,
       "uiSettings": {
         "grid": false,
         "gridType": "rectangular",
@@ -5576,7 +5632,7 @@
         "gridColor": 10401023,
         "gridAlpha": 0.8,
         "snap": false,
-        "zoomFactor": 0.6663432187179475,
+        "zoomFactor": 0.8981016630694236,
         "windowMask": false
       },
       "objectsGroups": [],
@@ -6064,11 +6120,83 @@
       ],
       "events": [
         {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "MusicPlaying"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "RePlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "MusicPlaying"
+                  },
+                  "parameters": [
+                    "",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlayMusicCanal"
+                  },
+                  "parameters": [
+                    "",
+                    "Assets2\\som\\musicas\\chee-zee-jungle.mp3",
+                    "1",
+                    "",
+                    "50",
+                    "1"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
           "disabled": true,
+          "folded": true,
           "name": "keyboard",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -23292,7 +23420,7 @@
         "gridColor": 10401023,
         "gridAlpha": 1,
         "snap": false,
-        "zoomFactor": 0.17003036489030046,
+        "zoomFactor": 0.11048078165018645,
         "windowMask": false
       },
       "objectsGroups": [
@@ -23335,8 +23463,8 @@
           "name": "player_hitbox",
           "persistentUuid": "ab64a6cb-e319-47b3-be85-fd372e3b677e",
           "width": 70,
-          "x": 43,
-          "y": 510,
+          "x": 12873,
+          "y": 470,
           "zOrder": -7,
           "numberProperties": [],
           "stringProperties": [],
@@ -23350,8 +23478,8 @@
           "name": "player_Pirata",
           "persistentUuid": "1631acd1-fdef-47f8-bd50-36bba3ed90bf",
           "width": 81,
-          "x": 45,
-          "y": 523,
+          "x": 12939,
+          "y": 465,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -23866,7 +23994,7 @@
           "persistentUuid": "61520fb0-5c68-4d9b-a88e-3f1b94b93aff",
           "width": 81,
           "x": 113,
-          "y": 734,
+          "y": 741,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -28860,8 +28988,8 @@
           "name": "Melo",
           "persistentUuid": "71d8ffab-2efc-4ffd-98a0-1f63c76a5869",
           "width": 45,
-          "x": 2769,
-          "y": 547,
+          "x": 3843,
+          "y": 250,
           "zOrder": 8,
           "numberProperties": [],
           "stringProperties": [],
@@ -31729,8 +31857,8 @@
           "name": "Caixa",
           "persistentUuid": "791196b9-c604-4e57-96e9-9e6a12740b6f",
           "width": 0,
-          "x": 6500,
-          "y": 365,
+          "x": 6641,
+          "y": 357,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -31898,8 +32026,8 @@
           "name": "go_left",
           "persistentUuid": "247db25f-db3d-4b05-a068-bce2194a194d",
           "width": 0,
-          "x": 4654,
-          "y": 233,
+          "x": 5267,
+          "y": 180,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -31941,8 +32069,8 @@
           "name": "go_right",
           "persistentUuid": "193ea05a-000b-4c0c-a395-ce49080e1c20",
           "width": 0,
-          "x": 4533,
-          "y": 233,
+          "x": 2695,
+          "y": 154,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -33186,8 +33314,8 @@
           "name": "Caixa",
           "persistentUuid": "c0f6cdfd-a0e5-434e-8648-33abfe46944f",
           "width": 0,
-          "x": 6500,
-          "y": 287,
+          "x": 6641,
+          "y": 279,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -33201,8 +33329,8 @@
           "name": "Caixa",
           "persistentUuid": "4bdd9510-1997-4fca-b08e-3016b5f59456",
           "width": 0,
-          "x": 6500,
-          "y": 519,
+          "x": 6641,
+          "y": 511,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -33461,8 +33589,8 @@
           "name": "go_left",
           "persistentUuid": "a0134cb1-5871-4fb0-8c8a-17f116e64ef0",
           "width": 0,
-          "x": 7041,
-          "y": 542,
+          "x": 6617,
+          "y": 457,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -33476,8 +33604,8 @@
           "name": "go_right",
           "persistentUuid": "0ada42a9-3555-4078-92dc-61b315108088",
           "width": 0,
-          "x": 6596,
-          "y": 542,
+          "x": 6224,
+          "y": 467,
           "zOrder": 13,
           "numberProperties": [],
           "stringProperties": [],
@@ -40551,7 +40679,7 @@
           "persistentUuid": "654226ec-1e41-41d8-9387-677ca1954f33",
           "width": 15891,
           "x": -452,
-          "y": -244,
+          "y": -259,
           "zOrder": -14,
           "numberProperties": [],
           "stringProperties": [],
@@ -42089,8 +42217,8 @@
           "name": "inimigo2",
           "persistentUuid": "f29a59b5-53cc-4599-afdf-df20c5be5b72",
           "width": 45,
-          "x": 9192,
-          "y": 129,
+          "x": 6131,
+          "y": 132,
           "zOrder": 23,
           "numberProperties": [],
           "stringProperties": [],
@@ -42405,7 +42533,7 @@
           "name": "go_left",
           "persistentUuid": "f1739e49-7c1a-4968-8309-3fb5dcd0b245",
           "width": 0,
-          "x": 6082,
+          "x": 6101,
           "y": 542,
           "zOrder": 12,
           "numberProperties": [],
@@ -42435,8 +42563,8 @@
           "name": "inimigo3",
           "persistentUuid": "a444c3f2-9094-4e43-be06-a502511d8a04",
           "width": 81,
-          "x": 4570,
-          "y": 189,
+          "x": 5932,
+          "y": 354,
           "zOrder": 11,
           "numberProperties": [],
           "stringProperties": [],
@@ -42458,40 +42586,6 @@
               "name": "num",
               "type": "number",
               "value": 5
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 77,
-          "layer": "",
-          "name": "inimigo",
-          "persistentUuid": "36980de9-26c1-4c0f-9ce6-2075905b1225",
-          "width": 81,
-          "x": 5768,
-          "y": 289,
-          "zOrder": 11,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "folded": true,
-              "name": "direcao",
-              "type": "number",
-              "value": 1
-            },
-            {
-              "folded": true,
-              "name": "coliso_ini",
-              "type": "number",
-              "value": 1
-            },
-            {
-              "folded": true,
-              "name": "num",
-              "type": "number",
-              "value": 7
             }
           ]
         },
@@ -42533,8 +42627,8 @@
           "name": "tesouro",
           "persistentUuid": "5e4fdfe1-cc1b-452c-a089-a126817ec51c",
           "width": 45,
-          "x": 12814,
-          "y": 427,
+          "x": 14533,
+          "y": -58,
           "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
@@ -42718,8 +42812,8 @@
           "name": "tesouro",
           "persistentUuid": "1500096a-239f-4df6-aa38-d887550be149",
           "width": 45,
-          "x": 3998,
-          "y": 250,
+          "x": 4202,
+          "y": 236,
           "zOrder": 28,
           "numberProperties": [],
           "stringProperties": [],
@@ -42899,8 +42993,8 @@
           "name": "moeda",
           "persistentUuid": "4b47c819-717b-4034-a557-c3812b1aa824",
           "width": 45,
-          "x": 6731,
-          "y": 280,
+          "x": 6875,
+          "y": 207,
           "zOrder": 25,
           "numberProperties": [],
           "stringProperties": [],
@@ -42929,8 +43023,8 @@
           "name": "dinheiro",
           "persistentUuid": "5bed7fe4-1d44-4af5-b445-74342ac25ad6",
           "width": 45,
-          "x": 12215,
-          "y": 396,
+          "x": 14904,
+          "y": 137,
           "zOrder": 27,
           "numberProperties": [],
           "stringProperties": [],
@@ -44272,44 +44366,10 @@
           "height": 186,
           "layer": "",
           "name": "inimigo4",
-          "persistentUuid": "9600cedd-f33d-451d-b9e8-36c18bff8aa1",
-          "width": 262,
-          "x": 11935,
-          "y": 419,
-          "zOrder": 29,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": [
-            {
-              "folded": true,
-              "name": "dire",
-              "type": "number",
-              "value": 1
-            },
-            {
-              "folded": true,
-              "name": "coliso_ini",
-              "type": "number",
-              "value": 5
-            },
-            {
-              "folded": true,
-              "name": "num",
-              "type": "number",
-              "value": 15
-            }
-          ]
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 186,
-          "layer": "",
-          "name": "inimigo4",
           "persistentUuid": "a92f6de4-048b-49c0-8aa2-5a7a8e3ea2e5",
           "width": 262,
-          "x": 13979,
-          "y": 168,
+          "x": 14651,
+          "y": 69,
           "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
@@ -44406,8 +44466,8 @@
           "name": "inimigo4",
           "persistentUuid": "1527fce8-e234-4c06-bba4-a17c638e828e",
           "width": 262,
-          "x": 12925,
-          "y": 409,
+          "x": 13214,
+          "y": 420,
           "zOrder": 29,
           "numberProperties": [],
           "stringProperties": [],
@@ -44440,8 +44500,8 @@
           "name": "Caixa",
           "persistentUuid": "608a31b5-16ae-460b-a779-43ffcb9979fe",
           "width": 0,
-          "x": 6500,
-          "y": 442,
+          "x": 6641,
+          "y": 434,
           "zOrder": 15,
           "numberProperties": [],
           "stringProperties": [],
@@ -44621,8 +44681,8 @@
           "name": "inimigo2",
           "persistentUuid": "cbbffe36-b4d8-4590-96b4-53bff6ef14c0",
           "width": 45,
-          "x": 4520,
-          "y": 118,
+          "x": 4232,
+          "y": 162,
           "zOrder": 23,
           "numberProperties": [
             {
@@ -44857,8 +44917,8 @@
           "name": "go_left",
           "persistentUuid": "49c9121a-cebe-4135-9be7-b6f3c3155a75",
           "width": 0,
-          "x": 14272,
-          "y": 205,
+          "x": 15021,
+          "y": 185,
           "zOrder": 12,
           "numberProperties": [],
           "stringProperties": [],
@@ -44875,6 +44935,397 @@
           "x": 11775,
           "y": 543,
           "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 43,
+          "layer": "",
+          "name": "inimigo2",
+          "persistentUuid": "9327c807-226f-4107-9c93-b01d9fb04689",
+          "width": 45,
+          "x": 9192,
+          "y": 129,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "di",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "name": "coliso_ini",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "name": "num",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 43,
+          "layer": "",
+          "name": "inimigo2",
+          "persistentUuid": "c12b844d-5a5d-4bce-b995-69f97850934a",
+          "width": 45,
+          "x": 7283,
+          "y": 50,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "di",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "name": "coliso_ini",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "name": "num",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 45,
+          "layer": "",
+          "name": "tesouro",
+          "persistentUuid": "2f1bb428-fd07-4198-9437-1881c4319109",
+          "width": 45,
+          "x": 11164,
+          "y": 325,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 45,
+          "layer": "",
+          "name": "dinheiro",
+          "persistentUuid": "70f5269b-ef78-4ad8-8ddf-ed64dd62a160",
+          "width": 45,
+          "x": 12215,
+          "y": 396,
+          "zOrder": 27,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 43,
+          "layer": "",
+          "name": "inimigo2",
+          "persistentUuid": "ab5b5096-ff33-4423-98bd-30b04b494690",
+          "width": 45,
+          "x": 5015,
+          "y": 65,
+          "zOrder": 23,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 2
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "di",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "name": "coliso_ini",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "name": "num",
+              "type": "number",
+              "value": 2
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "go_left",
+          "persistentUuid": "e38018f3-ece5-410b-a97f-9574d39ca7aa",
+          "width": 0,
+          "x": 4654,
+          "y": 233,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "go_right",
+          "persistentUuid": "5add24f7-82c4-45cf-9649-ff0a6acd1778",
+          "width": 0,
+          "x": 4533,
+          "y": 233,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 45,
+          "layer": "",
+          "name": "Melo",
+          "persistentUuid": "6da6c6a3-c466-4760-8464-80c452443c56",
+          "width": 45,
+          "x": 2769,
+          "y": 547,
+          "zOrder": 8,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 45,
+          "layer": "",
+          "name": "tesouro",
+          "persistentUuid": "0d031be3-5b20-4a06-8948-5e7edb2e0425",
+          "width": 45,
+          "x": 12814,
+          "y": 427,
+          "zOrder": 28,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 186,
+          "layer": "",
+          "name": "inimigo4",
+          "persistentUuid": "3f540c50-89a4-4db2-b7b2-7cb7cb712549",
+          "width": 262,
+          "x": 11935,
+          "y": 419,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "dire",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "name": "coliso_ini",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "folded": true,
+              "name": "num",
+              "type": "number",
+              "value": 15
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "go_right",
+          "persistentUuid": "153023e9-9258-4a2a-a90f-5e41f386bbdb",
+          "width": 0,
+          "x": 6737,
+          "y": 534,
+          "zOrder": 13,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "go_left",
+          "persistentUuid": "9062dff9-1bea-4305-84ed-52dab225b859",
+          "width": 0,
+          "x": 7041,
+          "y": 542,
+          "zOrder": 12,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 77,
+          "layer": "",
+          "name": "inimigo3",
+          "persistentUuid": "f0cc24de-5433-4a90-8415-645664160da0",
+          "width": 81,
+          "x": 4570,
+          "y": 189,
+          "zOrder": 11,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "direc",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "name": "coliso_ini",
+              "type": "number",
+              "value": 2
+            },
+            {
+              "folded": true,
+              "name": "num",
+              "type": "number",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 186,
+          "layer": "",
+          "name": "inimigo4",
+          "persistentUuid": "782085e7-897f-43c8-88c7-e1a2ab97d582",
+          "width": 250,
+          "x": 6171,
+          "y": 419,
+          "zOrder": 29,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": [
+            {
+              "folded": true,
+              "name": "dire",
+              "type": "number",
+              "value": 1
+            },
+            {
+              "folded": true,
+              "name": "coliso_ini",
+              "type": "number",
+              "value": 5
+            },
+            {
+              "folded": true,
+              "name": "num",
+              "type": "number",
+              "value": 15
+            }
+          ]
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 45,
+          "layer": "",
+          "name": "moeda",
+          "persistentUuid": "6f5af2c4-ea0a-4bb2-89dd-adb34260cf45",
+          "width": 45,
+          "x": 6429,
+          "y": 479,
+          "zOrder": 25,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "mensagem",
+          "persistentUuid": "bb19820e-5d96-4d6d-ac4f-f1db3ca8182d",
+          "width": 0,
+          "x": 15084,
+          "y": 53,
+          "zOrder": 30,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "",
+          "name": "botao_f",
+          "persistentUuid": "8173db95-5c3f-419e-b040-c54e8c7649ac",
+          "width": 0,
+          "x": 15108,
+          "y": 105,
+          "zOrder": 31,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 82,
+          "layer": "",
+          "name": "entrar",
+          "persistentUuid": "c4b48668-e4c3-4716-bc1e-239e8a5c434d",
+          "width": 95,
+          "x": 15080,
+          "y": 156,
+          "zOrder": 32,
           "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
@@ -50137,6 +50588,98 @@
               ]
             }
           ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "botao_f",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": true,
+                  "timeBetweenFrames": 0.5,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets2\\stagezero\\botao-teclado-f1.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    },
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "Assets2\\stagezero\\botao-teclado-f2.png",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": false,
+          "italic": false,
+          "name": "mensagem",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "Entrar",
+          "font": "Assets2\\fonts\\calibri.ttf",
+          "textAlignment": "left",
+          "characterSize": 35,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          }
+        },
+        {
+          "assetStoreId": "",
+          "height": 32,
+          "name": "entrar",
+          "tags": "",
+          "texture": "Assets2\\stagezero\\entrar.png",
+          "type": "TiledSpriteObject::TiledSprite",
+          "width": 32,
+          "variables": [],
+          "effects": [],
+          "behaviors": []
         }
       ],
       "events": [
@@ -50389,7 +50932,7 @@
         "gridColor": 10401023,
         "gridAlpha": 1,
         "snap": false,
-        "zoomFactor": 0.4303403802207844,
+        "zoomFactor": 0.23689563725447646,
         "windowMask": false
       },
       "objectsGroups": [
@@ -50418,36 +50961,6 @@
         {
           "angle": 0,
           "customSize": true,
-          "height": 76,
-          "layer": "",
-          "name": "player_hitbox",
-          "persistentUuid": "ab64a6cb-e319-47b3-be85-fd372e3b677e",
-          "width": 80,
-          "x": -186,
-          "y": 437,
-          "zOrder": -7,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 77,
-          "layer": "",
-          "name": "player_Pirata",
-          "persistentUuid": "1631acd1-fdef-47f8-bd50-36bba3ed90bf",
-          "width": 81,
-          "x": -190,
-          "y": 422,
-          "zOrder": 1,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
           "height": 81,
           "layer": "",
           "name": "terrain",
@@ -50459,7 +50972,7 @@
           "numberProperties": [
             {
               "name": "animation",
-              "value": 0
+              "value": 7
             }
           ],
           "stringProperties": [],
@@ -50533,7 +51046,7 @@
           "name": "terrain",
           "persistentUuid": "14ce61c8-4fcf-4a5e-8991-2fc875386874",
           "width": 81,
-          "x": 109,
+          "x": 2130,
           "y": -6,
           "zOrder": 4,
           "numberProperties": [
@@ -50553,7 +51066,7 @@
           "name": "terrain",
           "persistentUuid": "8a1c6583-294a-49fc-933a-0326d29e2de7",
           "width": 81,
-          "x": 190,
+          "x": 2211,
           "y": -6,
           "zOrder": 4,
           "numberProperties": [
@@ -50573,7 +51086,7 @@
           "name": "terrain",
           "persistentUuid": "b9af6b4d-bae5-4556-b938-082a71273bb4",
           "width": 81,
-          "x": 271,
+          "x": 2292,
           "y": -6,
           "zOrder": 4,
           "numberProperties": [
@@ -50633,7 +51146,7 @@
           "name": "terrain",
           "persistentUuid": "704cd045-cd4c-4add-935f-27d5f19f55f8",
           "width": 81,
-          "x": 112,
+          "x": 1000,
           "y": 668,
           "zOrder": 4,
           "numberProperties": [
@@ -50673,7 +51186,7 @@
           "name": "terrain",
           "persistentUuid": "b91ae298-537c-4976-a084-9cc15082e639",
           "width": 81,
-          "x": 32,
+          "x": 920,
           "y": 668,
           "zOrder": 4,
           "numberProperties": [
@@ -50713,7 +51226,7 @@
           "name": "terrain",
           "persistentUuid": "61520fb0-5c68-4d9b-a88e-3f1b94b93aff",
           "width": 81,
-          "x": 112,
+          "x": 1000,
           "y": 741,
           "zOrder": 4,
           "numberProperties": [
@@ -50773,7 +51286,7 @@
           "name": "terrain",
           "persistentUuid": "b51cefc8-bdc5-4e02-abbc-f9a467d2faf9",
           "width": 81,
-          "x": 32,
+          "x": 920,
           "y": 741,
           "zOrder": 4,
           "numberProperties": [
@@ -50793,8 +51306,8 @@
           "name": "terrain",
           "persistentUuid": "a25f35f9-1b12-4957-a422-c6385f9ea6fe",
           "width": 81,
-          "x": 517,
-          "y": 741,
+          "x": 2616,
+          "y": 739,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -50813,7 +51326,7 @@
           "name": "terrain",
           "persistentUuid": "e6917f7d-a220-469a-b4c5-3a8a7680ed4b",
           "width": 81,
-          "x": 352,
+          "x": 2373,
           "y": -6,
           "zOrder": 4,
           "numberProperties": [
@@ -50833,7 +51346,7 @@
           "name": "terrain",
           "persistentUuid": "80197845-7b8d-4d78-99a9-a45e305045b4",
           "width": 81,
-          "x": 433,
+          "x": 2454,
           "y": -6,
           "zOrder": 4,
           "numberProperties": [
@@ -50853,7 +51366,7 @@
           "name": "terrain",
           "persistentUuid": "dbf24e36-0253-48b0-9bf0-87d8bad4df2d",
           "width": 81,
-          "x": 514,
+          "x": 2773,
           "y": -6,
           "zOrder": 4,
           "numberProperties": [
@@ -50873,8 +51386,8 @@
           "name": "terrain",
           "persistentUuid": "712798d5-49d0-4378-b079-f7eacf6cf795",
           "width": 81,
-          "x": 436,
-          "y": 664,
+          "x": 2535,
+          "y": 662,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -50893,8 +51406,8 @@
           "name": "terrain",
           "persistentUuid": "90914328-5e7e-434d-97c4-da37450c8e27",
           "width": 81,
-          "x": 598,
-          "y": 664,
+          "x": 2697,
+          "y": 662,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -50913,8 +51426,8 @@
           "name": "terrain",
           "persistentUuid": "c1da60e5-393b-4e5e-b304-4ef55a7d772f",
           "width": 81,
-          "x": 517,
-          "y": 664,
+          "x": 2616,
+          "y": 662,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -50933,8 +51446,8 @@
           "name": "terrain",
           "persistentUuid": "cc00e53f-bfa2-4192-b0c6-12567c851645",
           "width": 81,
-          "x": 436,
-          "y": 741,
+          "x": 2535,
+          "y": 739,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -50953,8 +51466,8 @@
           "name": "terrain",
           "persistentUuid": "78e021d6-4316-45c6-a99c-aa8a76cd4760",
           "width": 81,
-          "x": 517,
-          "y": 741,
+          "x": 2616,
+          "y": 739,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -50973,8 +51486,8 @@
           "name": "terrain",
           "persistentUuid": "f9f3d579-9b42-4d4c-a49a-fff9995d8291",
           "width": 81,
-          "x": 679,
-          "y": 741,
+          "x": 2776,
+          "y": 146,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51173,8 +51686,8 @@
           "name": "terrain",
           "persistentUuid": "2c52fb98-d1d9-4733-b9d3-ed6ebbc01167",
           "width": 81,
-          "x": 679,
-          "y": 661,
+          "x": 2776,
+          "y": 66,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51188,65 +51701,16 @@
         {
           "angle": 0,
           "customSize": true,
+          "depth": 0,
           "height": 604,
           "layer": "background",
           "name": "background",
           "persistentUuid": "cbae4b2d-d07f-4f02-b5fb-9d2cc80e4d8c",
-          "width": 14671,
+          "width": 3238,
           "x": -412,
           "y": 46,
           "zOrder": -11,
           "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 35,
-          "layer": "HUD",
-          "name": "Melo_ponto",
-          "persistentUuid": "a9e840ab-5779-48a9-b6a0-fbaefe3de98a",
-          "width": 54,
-          "x": 164,
-          "y": 53,
-          "zOrder": 9,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 28,
-          "layer": "HUD",
-          "name": "Score",
-          "persistentUuid": "9b43c2c3-f80a-4e27-942f-9ba1fee03815",
-          "width": 58,
-          "x": 170,
-          "y": 56,
-          "zOrder": 10,
-          "numberProperties": [],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": false,
-          "height": 0,
-          "layer": "HUD",
-          "name": "vida",
-          "persistentUuid": "705d76ce-5878-4a1e-a873-d93c9eed721d",
-          "width": 0,
-          "x": 45,
-          "y": 56,
-          "zOrder": 14,
-          "numberProperties": [
-            {
-              "name": "animation",
-              "value": 0
-            }
-          ],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -51258,8 +51722,8 @@
           "name": "terrain",
           "persistentUuid": "62cf2a71-cbfc-49b3-a5f3-729182236cba",
           "width": 81,
-          "x": 274,
-          "y": 741,
+          "x": 2373,
+          "y": 739,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51278,8 +51742,8 @@
           "name": "terrain",
           "persistentUuid": "2e89399a-540b-4e55-8f59-5e8cd8bf7920",
           "width": 81,
-          "x": 193,
-          "y": 668,
+          "x": 2292,
+          "y": 666,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51298,8 +51762,8 @@
           "name": "terrain",
           "persistentUuid": "b0f3f4ab-a9b8-477f-8423-81f496839ce7",
           "width": 81,
-          "x": 355,
-          "y": 668,
+          "x": 2454,
+          "y": 666,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51318,8 +51782,8 @@
           "name": "terrain",
           "persistentUuid": "e4cf44a7-dfcb-44db-9d8e-96c9780b9be8",
           "width": 81,
-          "x": 193,
-          "y": 741,
+          "x": 2292,
+          "y": 739,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51338,8 +51802,8 @@
           "name": "terrain",
           "persistentUuid": "06152258-0643-49dc-b60b-94278cdbbfbb",
           "width": 81,
-          "x": 274,
-          "y": 741,
+          "x": 2373,
+          "y": 739,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51358,8 +51822,8 @@
           "name": "terrain",
           "persistentUuid": "f17265f6-d1d6-45d7-91d9-7b4f7e83330e",
           "width": 81,
-          "x": 355,
-          "y": 741,
+          "x": 2454,
+          "y": 739,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51378,7 +51842,7 @@
           "name": "terrain",
           "persistentUuid": "32d7ba0f-f60b-4f28-8d82-44662e5b5faf",
           "width": 81,
-          "x": -49,
+          "x": 839,
           "y": 741,
           "zOrder": 4,
           "numberProperties": [
@@ -51398,7 +51862,7 @@
           "name": "terrain",
           "persistentUuid": "80ee08b8-741c-4737-96c8-3b751dc22ebd",
           "width": 81,
-          "x": -130,
+          "x": 758,
           "y": 671,
           "zOrder": 4,
           "numberProperties": [
@@ -51418,7 +51882,7 @@
           "name": "terrain",
           "persistentUuid": "f3facb7d-95cc-4e33-a3a9-712102d82cd6",
           "width": 81,
-          "x": -49,
+          "x": 839,
           "y": 668,
           "zOrder": 4,
           "numberProperties": [
@@ -51438,7 +51902,7 @@
           "name": "terrain",
           "persistentUuid": "4f985463-52bf-42bf-a2c0-4face8c55e13",
           "width": 81,
-          "x": -130,
+          "x": 758,
           "y": 741,
           "zOrder": 4,
           "numberProperties": [
@@ -51458,7 +51922,7 @@
           "name": "terrain",
           "persistentUuid": "0b2efd88-b7e7-4783-b1c0-6b99e6ad261f",
           "width": 81,
-          "x": -49,
+          "x": 839,
           "y": 741,
           "zOrder": 4,
           "numberProperties": [
@@ -51478,7 +51942,7 @@
           "name": "terrain",
           "persistentUuid": "524f4597-d6bd-481d-b3c6-57dc05ee0303",
           "width": 81,
-          "x": 28,
+          "x": 2049,
           "y": -6,
           "zOrder": 4,
           "numberProperties": [
@@ -51498,7 +51962,7 @@
           "name": "terrain",
           "persistentUuid": "952d1891-7ccd-4e5b-b51b-ae1eb84ee784",
           "width": 81,
-          "x": -53,
+          "x": 1968,
           "y": -6,
           "zOrder": 4,
           "numberProperties": [
@@ -51578,8 +52042,8 @@
           "name": "terrain",
           "persistentUuid": "eceb3eaa-bc84-4354-90d8-457742c8ad2a",
           "width": 81,
-          "x": 274,
-          "y": 668,
+          "x": 2373,
+          "y": 666,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51587,21 +52051,6 @@
               "value": 6
             }
           ],
-          "stringProperties": [],
-          "initialVariables": []
-        },
-        {
-          "angle": 0,
-          "customSize": true,
-          "height": 840,
-          "layer": "background",
-          "name": "background3",
-          "persistentUuid": "654226ec-1e41-41d8-9387-677ca1954f33",
-          "width": 14546,
-          "x": -452,
-          "y": -245,
-          "zOrder": -14,
-          "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         },
@@ -51703,7 +52152,7 @@
           "name": "terrain",
           "persistentUuid": "0a5f5737-e937-4c1d-805c-3b105ecafb35",
           "width": 81,
-          "x": -131,
+          "x": 757,
           "y": 591,
           "zOrder": 4,
           "numberProperties": [
@@ -51723,7 +52172,7 @@
           "name": "terrain",
           "persistentUuid": "f83dd265-6cbb-4875-8ab6-69414d11ba53",
           "width": 81,
-          "x": -50,
+          "x": 838,
           "y": 591,
           "zOrder": 4,
           "numberProperties": [
@@ -51743,7 +52192,7 @@
           "name": "terrain",
           "persistentUuid": "1d7f5be3-1003-4e3c-a492-71049bd42765",
           "width": 81,
-          "x": 31,
+          "x": 919,
           "y": 591,
           "zOrder": 4,
           "numberProperties": [
@@ -51763,7 +52212,7 @@
           "name": "terrain",
           "persistentUuid": "baf6de0a-f8e9-43d2-a138-6f0579782865",
           "width": 81,
-          "x": 112,
+          "x": 1000,
           "y": 591,
           "zOrder": 4,
           "numberProperties": [
@@ -51783,8 +52232,8 @@
           "name": "terrain",
           "persistentUuid": "d1bead14-e671-40f0-a3cd-a1b86ad29902",
           "width": 81,
-          "x": 193,
-          "y": 591,
+          "x": 2292,
+          "y": 589,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51803,8 +52252,8 @@
           "name": "terrain",
           "persistentUuid": "47120d0f-5295-4bab-8c0b-1c41ad25d3ec",
           "width": 81,
-          "x": 274,
-          "y": 591,
+          "x": 2373,
+          "y": 589,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51823,8 +52272,8 @@
           "name": "terrain",
           "persistentUuid": "4645aac5-d752-4523-9d56-85221cdaf548",
           "width": 81,
-          "x": 355,
-          "y": 591,
+          "x": 2454,
+          "y": 589,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51843,8 +52292,8 @@
           "name": "terrain",
           "persistentUuid": "b494ff62-6ea1-4bf8-9899-1340a20a4a34",
           "width": 81,
-          "x": 436,
-          "y": 591,
+          "x": 2535,
+          "y": 589,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51863,8 +52312,8 @@
           "name": "terrain",
           "persistentUuid": "f6e880cf-042e-48db-9907-353645f78c15",
           "width": 81,
-          "x": 517,
-          "y": 591,
+          "x": 2616,
+          "y": 589,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51883,8 +52332,8 @@
           "name": "terrain",
           "persistentUuid": "eeb82d89-8fca-4855-9be3-c39a3e8d7f34",
           "width": 81,
-          "x": 598,
-          "y": 591,
+          "x": 2697,
+          "y": 589,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51903,8 +52352,8 @@
           "name": "terrain",
           "persistentUuid": "555b6f44-d7ba-492d-b92d-cd9a9b54ff96",
           "width": 81,
-          "x": 679,
-          "y": 591,
+          "x": 2778,
+          "y": 589,
           "zOrder": 4,
           "numberProperties": [
             {
@@ -51943,6 +52392,756 @@
           "name": "terrain",
           "persistentUuid": "47d673d2-85b1-48a6-a01d-dbc8bcd0172d",
           "width": 81,
+          "x": 2697,
+          "y": 739,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 76,
+          "layer": "",
+          "name": "player_hitbox",
+          "persistentUuid": "4840134d-f4e1-4a22-8414-68a92ad92588",
+          "width": 80,
+          "x": -186,
+          "y": 437,
+          "zOrder": -7,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 77,
+          "layer": "",
+          "name": "player_Pirata",
+          "persistentUuid": "1ae6b881-aead-400e-9c27-792b1ccc74a8",
+          "width": 81,
+          "x": -190,
+          "y": 422,
+          "zOrder": 1,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "cb61a8ea-8606-496a-b726-0e3cad519738",
+          "width": 81,
+          "x": 112,
+          "y": 668,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "82884e6b-43c8-46a3-8ca7-538656593865",
+          "width": 81,
+          "x": 32,
+          "y": 668,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "7fc47f24-439a-49f6-a0b8-9016658678ac",
+          "width": 81,
+          "x": 112,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "f5f2ff15-d30a-49c8-b34a-beb943e59cea",
+          "width": 81,
+          "x": 32,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "8c2f3f59-95ee-4e34-8d9b-df70cc55ba07",
+          "width": 81,
+          "x": 517,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "8d0d95eb-37e9-4dc5-ab0e-15da7edccbf5",
+          "width": 81,
+          "x": 436,
+          "y": 664,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "5551e80e-0a4c-4c2f-8ba7-804fae1339c5",
+          "width": 81,
+          "x": 598,
+          "y": 664,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "a6562848-009c-4162-80b2-0cf888c9cda3",
+          "width": 81,
+          "x": 517,
+          "y": 664,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "d7602558-934c-4638-8bfb-cb205c066e85",
+          "width": 81,
+          "x": 436,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "dc7658e8-1971-4f66-baec-ce3dadb4f28e",
+          "width": 81,
+          "x": 517,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "d58c487b-d177-411c-9369-9471d51dca74",
+          "width": 81,
+          "x": 679,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "b92e6c9d-83a6-4d33-a277-81d908434385",
+          "width": 81,
+          "x": 679,
+          "y": 661,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "7dd2a4af-d6a9-431f-8259-930d0793092b",
+          "width": 81,
+          "x": 274,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "ab41835a-7a78-479b-8f50-dbde8d9c6971",
+          "width": 81,
+          "x": 193,
+          "y": 668,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "153b43af-1fa4-49ee-9647-2c54652c31b8",
+          "width": 81,
+          "x": 355,
+          "y": 668,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "0109cf05-cbcb-4756-a828-bbd1b7212d8a",
+          "width": 81,
+          "x": 193,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "2a2f23ea-bbb8-4c94-9c4d-16fe3f44f830",
+          "width": 81,
+          "x": 274,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "59274494-f5cd-473d-b5a4-b25de715796f",
+          "width": 81,
+          "x": 355,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "d95e8428-5fa8-4aaf-9247-cd66a1b7085f",
+          "width": 81,
+          "x": -49,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "7fcd0ec8-ac2c-4b8f-9a10-8e9d6c255efa",
+          "width": 81,
+          "x": -130,
+          "y": 671,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "4fcf20bd-0416-4407-8ad1-f4b1e9de9ac4",
+          "width": 81,
+          "x": -49,
+          "y": 668,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "76f22d4f-45a1-481d-a9e6-13615f9a65fd",
+          "width": 81,
+          "x": -130,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "8b6e61a8-609f-4afb-adf3-d56dbe7cb431",
+          "width": 81,
+          "x": -49,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "a893a816-e021-413e-a8fa-b77ff60f2a97",
+          "width": 81,
+          "x": 274,
+          "y": 668,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "78e061b1-0d10-4f7c-8d38-c68ccf015f29",
+          "width": 81,
+          "x": -131,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "edb16a00-8078-4cdf-b17c-a4be440cf113",
+          "width": 81,
+          "x": -50,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "942c1400-2b46-47cb-b456-6e020ff199e1",
+          "width": 81,
+          "x": 31,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "a58f6794-c6e2-43bc-a803-9734e6544170",
+          "width": 81,
+          "x": 112,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "0fecae65-75ae-449f-8015-56f21b7bc502",
+          "width": 81,
+          "x": 193,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "09c4725e-e40f-446f-abbb-c678eb65fe32",
+          "width": 81,
+          "x": 274,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "13626023-f96a-4062-9e10-2bc4cca664fc",
+          "width": 81,
+          "x": 355,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "dcfc0b68-cfc4-4bf0-ba15-e58caffeab13",
+          "width": 81,
+          "x": 436,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "1095badc-6e0c-4863-b150-6c7875370d04",
+          "width": 81,
+          "x": 517,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "6bc462f3-9482-486f-99b3-aee2cc6daf61",
+          "width": 81,
+          "x": 598,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "de7cbc26-95d7-47d1-acf5-6b12a54621b8",
+          "width": 81,
+          "x": 679,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "85c37977-362a-4aa7-9047-657572c64898",
+          "width": 81,
           "x": 598,
           "y": 741,
           "zOrder": 4,
@@ -51952,6 +53151,1800 @@
               "value": 6
             }
           ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "031bc778-39e9-40be-9280-ad666df9cf74",
+          "width": 81,
+          "x": 109,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "333c7d6d-e254-49b9-b5ac-94d2513e5b2a",
+          "width": 81,
+          "x": 190,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "dbbdb742-63d8-4998-8610-e1afca7e9ae0",
+          "width": 81,
+          "x": 271,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "13ba8c0c-6102-4f5b-9057-c2dade9f0435",
+          "width": 81,
+          "x": 352,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "eac0c881-232c-4657-adcb-8490a2a7dea7",
+          "width": 81,
+          "x": 433,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "44beceaf-3b91-4f64-974c-07510a19882d",
+          "width": 81,
+          "x": 514,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 35,
+          "layer": "HUD",
+          "name": "Melo_ponto",
+          "persistentUuid": "7821a6df-93a9-4979-922e-7db8c3cd6979",
+          "width": 54,
+          "x": 164,
+          "y": 53,
+          "zOrder": 9,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 28,
+          "layer": "HUD",
+          "name": "Score",
+          "persistentUuid": "53ca2552-3295-45d1-a69a-cc428d3cc3e8",
+          "width": 58,
+          "x": 170,
+          "y": 56,
+          "zOrder": 10,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "layer": "HUD",
+          "name": "vida",
+          "persistentUuid": "c9f11d57-0906-49e0-bb3c-ee6248f05a2b",
+          "width": 0,
+          "x": 45,
+          "y": 56,
+          "zOrder": 14,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 0
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "072d7b8c-6a31-4dbf-8a33-b01bf8ecadeb",
+          "width": 81,
+          "x": 28,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "41f89ffc-3b4f-4ba3-b185-a45974493d4d",
+          "width": 81,
+          "x": -53,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "ea379f2b-841b-4538-bd3b-18825edf6100",
+          "width": 81,
+          "x": 834,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "a38eb8e9-ab16-4d8d-a9dd-4f0ea740c9cf",
+          "width": 81,
+          "x": 915,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "e33488ac-faa3-470f-a021-8e78f3474813",
+          "width": 81,
+          "x": 996,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "19f89b72-cb46-41c3-986b-06714e8ef0aa",
+          "width": 81,
+          "x": 1077,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "7b923eba-5993-4aca-b580-651e979a9b04",
+          "width": 81,
+          "x": 1158,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "563b0dbb-1d3f-418f-a9e8-935fa76a5e0a",
+          "width": 81,
+          "x": 1239,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "ec335c19-00ab-4b61-9511-3301af89df15",
+          "width": 81,
+          "x": 753,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "40b8ff61-2d32-4b24-a7ab-632cfd9919d7",
+          "width": 81,
+          "x": 672,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "b05507b3-9cc1-4912-9f3b-5669bac87f8a",
+          "width": 81,
+          "x": 1482,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "a2d8713f-0355-4ff7-b644-ac861f266350",
+          "width": 81,
+          "x": 1563,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "cf8fc85a-c94d-417e-b52e-bd677014c765",
+          "width": 81,
+          "x": 1644,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "db4a7036-06fe-43c7-b640-f085a2465bfd",
+          "width": 81,
+          "x": 1725,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "f577e936-230c-486d-a0d0-1236d6c05f49",
+          "width": 81,
+          "x": 1806,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "98bed6a2-cc81-4874-bf92-f6cfd1b7f319",
+          "width": 81,
+          "x": 1887,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "cc6cb388-7aa3-4a9e-9200-b0ffed837d2b",
+          "width": 81,
+          "x": 1401,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "e474dced-5d2b-49c0-96de-29889119dc4d",
+          "width": 81,
+          "x": 1320,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "d895f95e-0291-45e4-b7b5-47543b577331",
+          "width": 81,
+          "x": 1405,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "d598b2e1-0568-4e52-a865-9d5428f384a3",
+          "width": 81,
+          "x": 1324,
+          "y": 664,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "5738d30f-4647-407c-8e46-289b8981027f",
+          "width": 81,
+          "x": 1486,
+          "y": 664,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "037a608c-fdff-4dcd-be5c-cbbd05f4d10d",
+          "width": 81,
+          "x": 1405,
+          "y": 664,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "956733f4-fab7-4182-838c-55d6ab2e4a0c",
+          "width": 81,
+          "x": 1324,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "2c750580-c200-41af-92af-f8a213373af6",
+          "width": 81,
+          "x": 1405,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "c1c72777-b62b-4f8d-a8d9-c37880752eab",
+          "width": 81,
+          "x": 2213,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "8238ec30-d244-48d4-8cdf-31cf068c3680",
+          "width": 81,
+          "x": 2213,
+          "y": 661,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "89e08717-07ca-457d-84b4-1d67f0c66ed7",
+          "width": 81,
+          "x": 1162,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "0686b1e0-26a8-490c-aa4e-e60b593b0f98",
+          "width": 81,
+          "x": 1081,
+          "y": 668,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "a676ee06-02b1-48f9-ab46-6f14f3c57999",
+          "width": 81,
+          "x": 1243,
+          "y": 668,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "1ea8f190-24e6-4284-b80b-89152257e5d6",
+          "width": 81,
+          "x": 1081,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "9f9b28d6-b588-4aca-9646-9a119acb9007",
+          "width": 81,
+          "x": 1162,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "f875d79d-c17e-4a08-94b7-866b44fb96e0",
+          "width": 81,
+          "x": 1243,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "9184d578-2ea0-4bd2-a7d3-5c222f5b7508",
+          "width": 81,
+          "x": 1162,
+          "y": 668,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "23110c0a-fdcd-4cba-bc7c-e92b195729fa",
+          "width": 81,
+          "x": 1081,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "117be4c7-292d-4025-b3e8-1905698357dc",
+          "width": 81,
+          "x": 1162,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "abcfe499-f4c3-4b35-89a7-e71ce5ee54ce",
+          "width": 81,
+          "x": 1243,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "e5745d8d-3cf6-407b-884f-030a1df14804",
+          "width": 81,
+          "x": 1324,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "b6fed113-fd06-4597-8005-798399edcf47",
+          "width": 81,
+          "x": 1405,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "2a2c14a6-59b6-40bd-8ecb-0e88f818047b",
+          "width": 81,
+          "x": 1486,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "052122b3-d5a5-40a3-987e-719a9c569d34",
+          "width": 81,
+          "x": 2213,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "dc280b97-30b3-420f-9692-047a281b8638",
+          "width": 81,
+          "x": 1486,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "73e7edf4-bf09-4bfb-87f9-313c9f7c20c1",
+          "width": 81,
+          "x": 1970,
+          "y": 739,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "b920e0eb-b0c8-42f0-a49d-b15a727673cf",
+          "width": 81,
+          "x": 1889,
+          "y": 662,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "695f5d78-6f75-4c48-841b-32d3abc20989",
+          "width": 81,
+          "x": 2051,
+          "y": 662,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "9f0b1dc2-0931-4498-b28a-026764364532",
+          "width": 81,
+          "x": 1970,
+          "y": 662,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "ea68825b-577a-46a2-93bc-1f4b050a564c",
+          "width": 81,
+          "x": 1889,
+          "y": 739,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "9425e7cd-138e-4d6e-95f6-9f0ebccb77f0",
+          "width": 81,
+          "x": 1970,
+          "y": 739,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "fdbf1032-eaab-4682-bb61-cf186804ca7f",
+          "width": 81,
+          "x": 2132,
+          "y": 739,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "b35a7edb-d7a1-4500-8265-8add8b20ba20",
+          "width": 81,
+          "x": 2132,
+          "y": 659,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "fd93a1ce-8c25-4ba2-8321-f31ecf1f68ee",
+          "width": 81,
+          "x": 1727,
+          "y": 739,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "58404a13-39ab-496f-aeda-ab2846954257",
+          "width": 81,
+          "x": 1646,
+          "y": 666,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "a7d6b18c-bf76-4519-88db-d88086608a98",
+          "width": 81,
+          "x": 1808,
+          "y": 666,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "4883d100-5c2c-48d3-a32e-eab40a0272a0",
+          "width": 81,
+          "x": 1646,
+          "y": 739,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "f8353074-2c2e-467d-ac42-92e53323dc39",
+          "width": 81,
+          "x": 1727,
+          "y": 739,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "0be1912a-ccdd-4aaa-8bb6-9f1ddcb0433a",
+          "width": 81,
+          "x": 1808,
+          "y": 739,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "c47091e9-73fe-44c0-ae2e-3b989b0d3a11",
+          "width": 81,
+          "x": 1727,
+          "y": 666,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "8db20402-67fb-401a-8767-dc25accd5d48",
+          "width": 81,
+          "x": 1646,
+          "y": 589,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "a32e19fb-4e1e-43f3-b71f-e0951e11ba4c",
+          "width": 81,
+          "x": 1727,
+          "y": 589,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "5115efd8-a5af-49f5-aa63-bdafb63d6ce9",
+          "width": 81,
+          "x": 1808,
+          "y": 589,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "7d63ec27-d5ec-4583-acef-53b622e1a390",
+          "width": 81,
+          "x": 1889,
+          "y": 589,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "56e9f27a-3dd3-4e34-ad5e-ecd03d85cad5",
+          "width": 81,
+          "x": 1970,
+          "y": 589,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "935943d4-c18c-4fce-8c2c-59b0c20309ef",
+          "width": 81,
+          "x": 2051,
+          "y": 589,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "f28fb3e6-698b-4460-88b1-a5042932aa6a",
+          "width": 81,
+          "x": 2132,
+          "y": 589,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "0f885c03-f314-4960-a357-b195cdfee8da",
+          "width": 81,
+          "x": 2051,
+          "y": 739,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "8704e54d-59fb-4620-8596-845acf87ebe2",
+          "width": 81,
+          "x": 1567,
+          "y": 741,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "15e1af7a-1dd6-4b1c-99df-f1d545f9db08",
+          "width": 81,
+          "x": 1567,
+          "y": 661,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "b0e6c486-9077-451a-a221-a4f46c39ddc7",
+          "width": 81,
+          "x": 1567,
+          "y": 591,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 1
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "386833c0-0a48-4d8e-aa8f-e99771e9a0cf",
+          "width": 81,
+          "x": 2535,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "1675fe8a-6654-4215-af03-245a1fcf57ea",
+          "width": 81,
+          "x": 2613,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "a6484f77-5e93-4fe4-9f75-5dbd1c3903bd",
+          "width": 81,
+          "x": 2693,
+          "y": -6,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 5
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "0e1d2dd6-e45b-4196-80d4-63faffac96a3",
+          "width": 81,
+          "x": 2778,
+          "y": 659,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "d4591aa7-ff51-4c65-832d-0465e8751b63",
+          "width": 81,
+          "x": 2778,
+          "y": 739,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "1f079cbb-d047-48d3-8b54-73c545b4b6e1",
+          "width": 81,
+          "x": 2776,
+          "y": 429,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "1b492b64-07cf-4c39-be00-eba9abe1059f",
+          "width": 81,
+          "x": 2776,
+          "y": 509,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "e096803b-00bb-4a84-8f9c-59740c0cc68d",
+          "width": 81,
+          "x": 2776,
+          "y": 269,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "51144e67-10bc-4994-9956-cd5f004ea406",
+          "width": 81,
+          "x": 2776,
+          "y": 349,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "51a9c554-b0ba-419c-b8f5-1e3637697e14",
+          "width": 81,
+          "x": 2775,
+          "y": 108,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "height": 81,
+          "layer": "",
+          "name": "terrain",
+          "persistentUuid": "db6e277b-6df1-41f2-963d-cfb76baeb840",
+          "width": 81,
+          "x": 2775,
+          "y": 188,
+          "zOrder": 4,
+          "numberProperties": [
+            {
+              "name": "animation",
+              "value": 6
+            }
+          ],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "",
+          "name": "limite",
+          "persistentUuid": "f16819d2-4cc9-41ea-9413-4c19fb254582",
+          "width": 3791,
+          "x": -628,
+          "y": 678,
+          "zOrder": 21,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 90,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "",
+          "name": "limite2",
+          "persistentUuid": "b3e46c88-4c02-4b0a-8990-30c561adc284",
+          "width": 1022,
+          "x": -924,
+          "y": 349,
+          "zOrder": 22,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 269,
+          "customSize": true,
+          "depth": 0,
+          "height": 64,
+          "layer": "",
+          "name": "limite3",
+          "persistentUuid": "7041c6bf-2f33-4ffa-80d9-20ff1c5894d7",
+          "width": 1529,
+          "x": 2069,
+          "y": 412,
+          "zOrder": 23,
+          "numberProperties": [],
+          "stringProperties": [],
+          "initialVariables": []
+        },
+        {
+          "angle": 0,
+          "customSize": true,
+          "depth": 0,
+          "height": 267,
+          "layer": "",
+          "name": "NewText",
+          "persistentUuid": "af87655d-9011-41fd-99d6-701dd1f7306a",
+          "width": 3370,
+          "x": 195,
+          "y": 218,
+          "zOrder": -8,
+          "numberProperties": [],
           "stringProperties": [],
           "initialVariables": []
         }
@@ -53251,7 +56244,7 @@
           "height": 32,
           "name": "background",
           "tags": "",
-          "texture": "Assets2\\stagezero\\cenarios\\istockphoto-149481764-612x612.jpg",
+          "texture": "Assets2\\stagezero\\cenarios\\istockphoto-149481764-612x612.jpg2",
           "type": "TiledSpriteObject::TiledSprite",
           "width": 32,
           "variables": [],
@@ -54422,6 +57415,154 @@
             "debugMode": false,
             "texture": ""
           }
+        },
+        {
+          "assetStoreId": "",
+          "name": "limite",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewSprite4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "limite2",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewSprite4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "name": "limite3",
+          "tags": "",
+          "type": "Sprite",
+          "updateIfNotVisible": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "animations": [
+            {
+              "name": "NewSprite",
+              "useMultipleDirections": false,
+              "directions": [
+                {
+                  "looping": false,
+                  "metadata": "{\"pskl\":{}}",
+                  "timeBetweenFrames": 0.08,
+                  "sprites": [
+                    {
+                      "hasCustomCollisionMask": false,
+                      "image": "NewSprite4",
+                      "points": [],
+                      "originPoint": {
+                        "name": "origine",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "centerPoint": {
+                        "automatic": true,
+                        "name": "centre",
+                        "x": 0,
+                        "y": 0
+                      },
+                      "customCollisionMask": []
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "assetStoreId": "",
+          "bold": true,
+          "italic": true,
+          "name": "NewText",
+          "smoothed": true,
+          "tags": "",
+          "type": "TextObject::Text",
+          "underlined": false,
+          "variables": [],
+          "effects": [],
+          "behaviors": [],
+          "string": "FASE EM CONSTRUÇÃO ",
+          "font": "",
+          "textAlignment": "left",
+          "characterSize": 150,
+          "color": {
+            "b": 45,
+            "g": 45,
+            "r": 143
+          }
         }
       ],
       "events": [
@@ -54535,6 +57676,26 @@
                 "player_Pirata.PointX(\"Point\")",
                 "=",
                 "player_Pirata.PointY(\"Point\")"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ClampCamera"
+              },
+              "parameters": [
+                "",
+                "limite2.BoundingBoxLeft()",
+                "0",
+                "limite3.BoundingBoxRight()",
+                "limite.BoundingBoxBottom()",
+                "",
+                ""
               ]
             }
           ]
@@ -54682,6 +57843,30 @@
               },
               "parameters": [
                 "player_hitbox"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "entrar"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "mensagem"
+              ]
+            },
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "botao_f"
               ]
             }
           ]
@@ -55332,9 +58517,117 @@
           "parameters": []
         },
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [],
-          "actions": []
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Entrar na caverna",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "player_Pirata",
+                    "entrar",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "mensagem",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "botao_f",
+                    ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [
+                    {
+                      "type": {
+                        "value": "KeyReleased"
+                      },
+                      "parameters": [
+                        "",
+                        "f"
+                      ]
+                    }
+                  ],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Scene"
+                      },
+                      "parameters": [
+                        "",
+                        "\"stagecaverna\"",
+                        ""
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "player_Pirata",
+                    "entrar",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "mensagem"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Cache"
+                  },
+                  "parameters": [
+                    "botao_f"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         }
       ]
     },
